@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title></title>
+    <link rel="stylesheet" href="css/global.css" type="text/css"/>
+    <link rel="stylesheet" href="css/design.css" type="text/css"/>
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="js/page_cover.js" type="text/javascript"></script>
+    <script src="js/common.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+    <div id="inner">
+        <div id="main">
+            <div class="logo_header">
+                <a href="index.html"></a>
+            </div>
+            <div class="design_img">
+                <div class="design_img_show">
+                    <img src="image/design.png" />
+                </div>
+            </div>
+            <div class="design_content">
+                <div class="design_content_inner">
+                    <div class="design_title">
+                        <span><个性定制>巴黎欧莱雅专属形象画面</span>
+                    </div>
+                    <div class="design_specific cf">
+                        <span class="specific_title txt">规&emsp;&emsp;格:</span>
+                        <span class="height">
+                            <label>高</label>
+                            <input type="text" value="280" class="height_num" />
+                        </span>
+                        <span class="width">
+                            <label>宽</label>
+                            <input type="text" value="280" class="width_num" />
+                        </span>
+                        (mm毫米)
+                    </div>
+                    <div class="design_number cf">
+                        <span class="txt">数&emsp;&emsp;量:</span>
+                        <input type="text" value="2" class="number_input">
+                    </div>
+                    <div class="design_position cf">
+                        <span class="txt">位&emsp;&emsp;置:</span>
+                        <p class="position_select">
+                            <select class="location" name="location">
+                                <option value="">零售台</option>
+                                <option value="">零售台台</option>
+                                <option value="">零售台</option>
+                                <option value="">零售台零售台</option>
+                            </select>
+                        </p>
+                        <div class="select_choice">
+                            <span class="select_arrow"></span>
+                        </div>
+                    </div>
+                    <div class="design_material cf">
+                        <span class="txt">材&emsp;&emsp;质:</span>
+                        <p class="position_select">
+                            <select class="location" name="location">
+                                <option value="">写真玻璃</option>
+                                <option value="">写真玻璃</option>
+                                <option value="">零售台</option>
+                                <option value="">零售台零售台</option>
+                            </select>
+                        </p>
+                        <div class="select_choice">
+                            <span class="select_arrow"></span>
+                        </div>
+                    </div>
+                    <div class="design_sight cf">
+                        <span class="txt">画&emsp;&emsp;面:</span>
+                        <p class="position_select">
+                            <select class="location" name="location">
+                                <option value="">小V脸造型(首选)</option>
+                                <option value="">小V脸造型</option>
+                                <option value="">黛红微卷高层次剪</option>
+                                <option value="">酷棕反层剪</option>
+                                <option value="">全新依诺雅主形象</option>
+                            </select>
+                        </p>
+                        <div class="select_choice">
+                            <span class="select_arrow"></span>
+                        </div>
+                    </div>
+                    <div class="design_points">
+                        <span>积分:</span>
+                        <span class="need_points">560</span>
+                    </div>
+                </div>
+                <div class="button_cart">
+                    <div class="action_link">
+                        <a class="change">立即兑换</a>
+                        <a class="shopping_cart" href="order.html">加入购物车</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product_detail">
+                <div class="product_detail_title">
+                    产品详情
+                    <span class="arrow_bottom"></span>
+                </div>
+                <div class="product_detail_inner">
+                    <p>每个学员都能掌握熟练的美发技术，因此每个学员的发展空间都很大，他们不仅可以做美发师、造型师，还以可以去美容美发培训学校做讲师，学员还可以自己开店，这是我们队每个学员的培训标准，能让他们独立的开好自己的美发店，发展速度快。按照现在生活的发展趋势，以后会有越来越多的高端人士和白领都会拥有自己的私人美发师，因此美发师就目前和未来来说都是一个高薪就业的</p>
+                </div>
+            </div>
+        </div>
+        <div id="div_f">
+            <a href="education.html" id="special"></a>
+            <a href="tool.html" id="hair_tool"></a>
+            <a href="promotion.html" id="promote"></a>
+            <a href="custom_image.html" id="customer"></a>
+            <a href="color.html" id="colors"></a>
+            <a href="user_center.html" id="user_center"></a>
+        </div>
+        <div class="div_f_open" onclick="f_open(1);" style="position:fixed;bottom:0;width:24%;right:0;z-index:9999;"></div>
+        <div class="div_f_close" onclick="f_close(1);" style="position:fixed;bottom:0;width:17%;left:26%;z-index:9999;display:none;"></div>
+    </div>
+    <script>
+        var ff;
+        var f_number = 1;
+        var div_number = 0;
+        function f_open(number){
+            $('.div_f_open').css("display","none");
+            div_number = number;
+            ff = setInterval("f_open_move()",60);
+        }
+
+        function f_open_move(){
+            document.getElementById('img_f_'+div_number+'_'+f_number).style.display = "none";
+            f_number++;
+            document.getElementById('img_f_'+div_number+'_'+f_number).style.display = "";
+            if(f_number == 9){
+                clearInterval(ff);
+                document.getElementById('div_f').style.display = "block";
+                $('.div_f_close').css("display","");
+            }
+        }
+
+
+        function f_close(number){
+            c_d = 0;
+            $('.div_f_close').css("display","none");
+            document.getElementById('div_f').style.display = "none";
+            ff = setInterval("f_close_move()",60);
+        }
+
+
+        function f_close_move(){
+            document.getElementById('img_f_'+div_number+'_'+f_number).style.display = "none";
+            f_number--;
+            document.getElementById('img_f_'+div_number+'_'+f_number).style.display = "";
+            if(f_number == 1){
+                clearInterval(ff);
+                div_number = 0;
+                $('.div_f_open').css("display","");
+            }
+        }
+
+
+        for(var i=1;i<=9;i++){
+            var nod="";
+            if(i!=1){
+                nod = "display:none;z-index:11;";
+            }
+            $("#inner").append('<img id="img_f_1_'+i+'" class="page" src="image/f_'+i+'_new.png" style="'+nod+'" >');
+
+
+        }
+    </script>
+</body>
+</html>

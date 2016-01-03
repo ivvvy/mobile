@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title></title>
+    <link rel="stylesheet" href="css/global.css" type="text/css"/>
+    <link rel="stylesheet" href="css/personal_info.css" type="text/css"/>
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="js/page_cover.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+    <div id="inner">
+        <div id="main">
+            <div class="logo_header">
+                <a href="index.html"></a>
+            </div>
+            <div class="user_bg"></div>
+            <div class="users_info ">
+                <div class="user_pic">
+                    <span class="own_img"></span>
+                </div>
+                <div class="client">
+                    <div class="client_info">
+                        <span class="client_name">李秀丽李秀丽</span>
+                        <span class="sex_icon">
+                            <i class="icon_show_w"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="user_options">
+                <div class="my_lists">
+                    <dl>
+                        <dd>
+                            <span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</span>
+                            <span class="customer_name">李秀丽</span>
+                        </dd>
+                        <dd>
+                            <span>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</span>
+                            <span class="customer_name">女</span>
+                        </dd>
+                        <dd>
+                            <span>生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日：</span>
+                            <span class="customer_name">1978 - 07 - 18</span>
+                        </dd>
+                        <dd>
+                            <span>电子邮件：</span>
+                            <span class="customer_name">lixiuli@expert.com.cn</span>
+                        </dd>
+                        <dd>
+                            <span>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区：</span>
+                            <span class="customer_name">上海市长宁区</span>
+                        </dd>
+                        <dd class="address">
+                            <span class="add_title">收货地址：</span>
+                            <span class="user_add">上海市万航渡路2453号周家桥 创意园B栋403室 </span>
+                        </dd>
+                        <dd>
+                            <span>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编：</span>
+                            <span class="customer_name">200051</span>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="edit_info">
+                <a href="info_edit.html">修改资料</a>
+            </div>
+        </div>
+        <div id="div_f">
+            <a href="education.html" id="special"></a>
+            <a href="tool.html" id="hair_tool"></a>
+            <a href="promotion.html" id="promote"></a>
+            <a href="custom_image.html" id="customer"></a>
+            <a href="color.html" id="colors"></a>
+            <a href="user_center.html" id="user_center"></a>
+        </div>
+        <div class="div_f_open" onclick="f_open(1);" style="position:fixed;bottom:0;width:10%;right:0;z-index:9999;"></div>
+        <div class="div_f_close" onclick="f_close(1);" style="position:fixed;bottom:0;width:17%;left:26%;z-index:9999;display:none;"></div>
+    </div>
+    <script>
+        var ff;
+        var f_number = 1;
+        var div_number = 0;
+        function f_open(number){
+            $('.div_f_open').css("display","none");
+            div_number = number;
+            ff = setInterval("f_open_move()",60);
+        }
+
+        function f_open_move(){
+            document.getElementById('img_f_'+div_number+'_'+f_number).style.display = "none";
+            f_number++;
+            document.getElementById('img_f_'+div_number+'_'+f_number).style.display = "";
+            if(f_number == 9){
+                clearInterval(ff);
+                document.getElementById('div_f').style.display = "block";
+                $('.div_f_close').css("display","");
+            }
+        }
+
+
+        function f_close(number){
+            c_d = 0;
+            $('.div_f_close').css("display","none");
+            document.getElementById('div_f').style.display = "none";
+            ff = setInterval("f_close_move()",60);
+        }
+
+
+        function f_close_move(){
+            document.getElementById('img_f_'+div_number+'_'+f_number).style.display = "none";
+            f_number--;
+            document.getElementById('img_f_'+div_number+'_'+f_number).style.display = "";
+            if(f_number == 1){
+                clearInterval(ff);
+                div_number = 0;
+                $('.div_f_open').css("display","");
+            }
+        }
+
+
+        for(var i=1;i<=9;i++){
+            var nod="";
+            if(i!=1){
+                nod = "display:none;z-index:11;";
+            }
+            $("#inner").append('<img id="img_f_1_'+i+'" class="page" src="image/f_'+i+'_new.png" style="'+nod+'" >');
+
+
+        }
+    </script>
+</body>
+</html>

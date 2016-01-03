@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title></title>
+    <link rel="stylesheet" href="css/global.css" type="text/css"/>
+    <link rel="stylesheet" href="css/education.css" type="text/css"/>
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="js/payfor.js" type="text/javascript"></script>
+    <script src="js/page_cover.js" type="text/javascript"></script>
+    <script src="js/common.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="inner">
+        <div id="common_wrapper">
+            <div id="main">
+                <div class="logo_header">
+                    <a href="index.html"></a>
+                </div>
+                <div class="item_content">
+                    <div class="item_content_pic">
+                        <img src="image/pic_person.png" />
+                    </div>
+                    <div class="education_person">
+                        <div class="person_detail">
+                            <div class="person_detail_inner">
+                                <span class="title_text">创意小组新成员 孙文涛</span>
+                                <div class="main_content">
+                                    <div class="main_desc">
+                                        <div class="title_lesson"><div class="word_gap">课&emsp;&emsp;程:</div><span class="lesson_name">BK繁简课程&ITLOOKS潮流课程</span></div>
+                                        <div class="use_way">
+                                            <span class="sug">推荐用途:</span>
+                                            <span class="sug_desc">消费者礼品</span>
+                                            <span class="sug_desc">发型师激励</span>
+                                            <span class="sug_desc">消费者年终回馈</span>
+                                        </div>
+                                        <div class="lesson_day">
+                                            <span class="word_gap">天&emsp;&emsp;数:</span>
+                                            <div class="day--select">
+                                                <span class="day day_active">2天</span>
+                                                <span class="day">3天</span>
+                                                <span class="day">4天</span>
+                                                <span class="day">5天</span>
+                                            </div>
+                                        </div>
+                                        <div class="number">
+                                            <span class="number_msg">兑换数量:</span>
+                                            <div class="quantity_wrapper">
+                                                <a href="javascript:void(0)" class="minus" onClick="setAmount.reduce('#qty_item_1')">-</a>
+                                                <input type="text" class="quantity" value="1" name="qty_item_1" id="qty_item_1" onKeyUp="setAmount.modify('#qty_item_1')" />
+                                                <a href="javascript:void(0)" class="add" onClick="setAmount.add('#qty_item_1')">+</a>
+                                            </div>
+                                        </div>
+                                        <div class="points">
+                                            <span class="word_gap">积&emsp;&emsp;分:</span>
+                                            <span class="points_cost">160</span>
+                                        </div>
+                                    </div>
+                                    <div class="btn_cart">
+                                        <div class="action_link">
+                                            <a class="change" href="">立即兑换</a>
+                                            <a class="shopping_cart" href="order.html">加入购物车</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_detail">
+                        <div class="product_detail_title">
+                            产品详情
+                            <span class="arrow_bottom"></span>
+                        </div>
+                        <div class="product_detail_inner">
+                            <div class="product_img_show">
+                                <img src="image/recommend.png" />
+                                <img src="image/recommend.png" />
+                                <img src="image/recommend.png" />
+
+                            </div>
+                            <p>每个学员都能掌握熟练的美发技术，因此每个学员的发展空间都很大，他们不仅可以做美发师、造型师，还以可以去美容美发培训学校做讲师，学员还可以自己开店，这是我们队每个学员的培训标准，能让他们独立的开好自己的美发店，发展速度快。按照现在生活的发展趋势，以后会有越来越多的高端人士和白领都会拥有自己的私人美发师，因此美发师就目前和未来来说都是一个高薪就业的</p>
+                        </div>
+                    </div>
+                    <div class="guess_ulike">
+                        <div class="shopping_guess">
+                            <span class="shopping_guess_title">为您推荐:</span>
+                            <div class="shopping_guess_cover">
+                                <ul class="shopping_guess_list">
+                                    <li class="shopping_guess_item">
+                                        <img src="image/recommend.png" />
+                                    </li>
+                                    <li class="shopping_guess_item">
+                                        <img src="image/recommend.png" />
+                                        <span class="orange"></span>
+                                    </li>
+                                    <li class="shopping_guess_item">
+                                        <img src="image/recommend.png" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="div_f">
+            <a href="education.html" id="special"></a>
+            <a href="tool.html" id="hair_tool"></a>
+            <a href="promotion.html" id="promote"></a>
+            <a href="custom_image.html" id="customer"></a>
+            <a href="color.html" id="colors"></a>
+            <a href="user_center.html" id="user_center"></a>
+        </div>
+        <div class="div_f_open" onclick="f_open(1);" style="position:fixed;bottom:0;width:24%;right:0;z-index:9999;"></div>
+        <div class="div_f_close" onclick="f_close(1);" style="position:fixed;bottom:0;width:17%;left:26%;z-index:9999;display:none;"></div>
+        <div class="alert--page">
+            <div class="alert--tip">
+                <span class="close"></span>
+                <p class="status--tips">商品已下架</p>
+                <!--<p class="birthday--tips">每个学员都能掌握熟练的美发技术，因此每个学员的发展空间都很大，他们不仅可以做美发师、造型师，还以可以去美容美发培训学校做讲师，学员还可以自己开店，这是我们队每个学员的培训标准，能让他们独立的开好自己的美发店，发展速度快。按照现在生活的发展趋势，以后会有越来越多的高端人士和白领都会拥有自己的私人美发师，因此美发师就目前和未来来说都是一个高薪就业的</p>-->
+            </div>
+            <div class="alert--line">
+                <span class="bottom_line"></span>
+            </div>
+        </div>
+    </div>
+    <script>
+        var ff;
+        var f_number = 1;
+        var div_number = 0;
+        function f_open(number){
+            $('.div_f_open').css("display","none");
+            div_number = number;
+            ff = setInterval("f_open_move()",60);
+        }
+
+        function f_open_move(){
+            document.getElementById('img_f_'+div_number+'_'+f_number).style.display = "none";
+            f_number++;
+            document.getElementById('img_f_'+div_number+'_'+f_number).style.display = "";
+            if(f_number == 9){
+                clearInterval(ff);
+                document.getElementById('div_f').style.display = "block";
+                $('.div_f_close').css("display","");
+            }
+        }
+
+
+        function f_close(number){
+            c_d = 0;
+            $('.div_f_close').css("display","none");
+            document.getElementById('div_f').style.display = "none";
+            ff = setInterval("f_close_move()",60);
+        }
+
+
+        function f_close_move(){
+            document.getElementById('img_f_'+div_number+'_'+f_number).style.display = "none";
+            f_number--;
+            document.getElementById('img_f_'+div_number+'_'+f_number).style.display = "";
+            if(f_number == 1){
+                clearInterval(ff);
+                div_number = 0;
+                $('.div_f_open').css("display","");
+            }
+        }
+
+
+        for(var i=1;i<=9;i++){
+            var nod="";
+            if(i!=1){
+                nod = "display:none;z-index:11;";
+            }
+            $("#inner").append('<img id="img_f_1_'+i+'" class="page" src="image/f_'+i+'_new.png" style="'+nod+'" >');
+
+
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title></title>
+    <link rel="stylesheet" href="css/global.css" type="text/css"/>
+    <link rel="stylesheet" href="css/index.css" type="text/css"/>
+    <link rel="stylesheet" href="css/swiper.3.1.2.min.css" type="text/css"/>
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="js/page_cover.js" type="text/javascript"></script>
+    <script src="js/swiper.jquery.min.js" type="text/javascript"></script>
+    <script src="js/common.js" type="text/javascript"></script>
+    <script src="js/alert.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="inner">
+    <div id="common_wrapper">
+        <div id="main">
+            <div class="logo_header">
+                <a href="index.html"></a>
+            </div>
+            <div class="slider_wrapper">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="banner">
+                                    <a href="">
+                                        <img src="image/banner_02.png" />
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="banner">
+                                    <a href="">
+                                        <img src="image/banner_03.png" />
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="banner">
+                                    <a href="">
+                                        <img src="image/banner_04.png" />
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <nav class="quick_nav">
+                <a href="" class="quick_entry_link quick_icon">
+                    <img src="image/icon_03.png" />
+                    <span>新品推荐</span>
+                </a>
+                <a href="" class="quick_entry_link quick_icon">
+                    <img src="image/icon_04.png" />
+                    <span>热卖推荐</span>
+                </a>
+                <a href="" class="quick_entry_link quick_icon">
+                    <img src="image/icon_05.png" />
+                    <span>方案推荐</span>
+                </a>
+                <a href="gifts.html" class="quick_entry_link quick_icon">
+                    <img src="image/icon_06.png" />
+                    <span>礼包推荐</span>
+                </a>
+            </nav>
+            <div class="education">
+                <div class="education_floor">
+                    <a href="education.html">
+                        <img src="image/link_01.png" class="edu" />
+                    </a>
+                </div>
+                <div class="education_floor">
+                    <a href="tool.html">
+                        <img src="image/link_02.png" class="edu" />
+                    </a>
+                </div>
+                <div class="education_floor">
+                    <a href="promotion.html">
+                        <img src="image/link_03.png" class="edu" />
+                    </a>
+                </div>
+                <div class="education_floor">
+                    <a href="custom_image.html">
+                        <img src="image/link_04.png" class="edu" />
+                    </a>
+                </div>
+                <div class="education_floor">
+                    <a href="color.html">
+                        <img src="image/link_05.png" class="edu" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+        <footer id="footer">
+            <ul class="footer_links">
+                <li><a href="">积分规则</a></li>
+                <li><a href="">联系我们</a></li>
+            </ul>
+            <p>兑礼服务热线:021-52008060   系统服务热线:021-60290033-802<br />邮箱:salon.club@loreal.com</p>
+        </footer>
+    </div>
+    <div id="div_f">
+        <a href="education.html" id="special"></a>
+        <a href="tool.html" id="hair_tool"></a>
+        <a href="promotion.html" id="promote"></a>
+        <a href="custom_image.html" id="customer"></a>
+        <a href="color.html" id="colors"></a>
+        <a href="user_center.html" id="user_center"></a>
+    </div>
+    <div class="div_f_open" onclick="f_open(1);" style="position:fixed;bottom:0;width:13%;right:0;z-index:9999;"></div>
+    <div class="div_f_close" onclick="f_close(1);" style="position:fixed;bottom:0;width:17%;left:26%;z-index:9999;display:none;"></div>
+    <div id="modal"></div>
+    <div class="alert--page">
+        <div class="alert--tip">
+            <span class="close"></span>
+            <div class="alert--inner">
+                <h3 class="birthday--title">亲爱的会员，祝您生日快乐！</h3>
+                <!-- <p class="status--tips">商品已下架</p>-->
+                <p class="birthday--tips">在你生日的这一天，将快乐的音符，作为礼物送给你，愿你一年365天快快乐乐，平平安安！</p>
+                <p class="alert--time">2015-12-18&ensp;16:20:10</p>
+            </div>
+        </div>
+        <div class="alert--line">
+            <span class="bottom_line"></span>
+        </div>
+    </div>
+</div>
+<script>
+    var ff;
+    var f_number = 1;
+    var div_number = 0;
+    function f_open(number){
+        $('.div_f_open').css("display","none");
+        div_number = number;
+        ff = setInterval("f_open_move()",60);
+    }
+
+    function f_open_move(){
+        document.getElementById('img_f_'+div_number+'_'+f_number).style.display = "none";
+        f_number++;
+        document.getElementById('img_f_'+div_number+'_'+f_number).style.display = "";
+        if(f_number == 9){
+            clearInterval(ff);
+            document.getElementById('div_f').style.display = "block";
+            $('.div_f_close').css("display","");
+        }
+    }
+
+
+    function f_close(number){
+        c_d = 0;
+        $('.div_f_close').css("display","none");
+        document.getElementById('div_f').style.display = "none";
+        ff = setInterval("f_close_move()",60);
+    }
+
+
+    function f_close_move(){
+        document.getElementById('img_f_'+div_number+'_'+f_number).style.display = "none";
+        f_number--;
+        document.getElementById('img_f_'+div_number+'_'+f_number).style.display = "";
+        if(f_number == 1){
+            clearInterval(ff);
+            div_number = 0;
+            $('.div_f_open').css("display","");
+        }
+    }
+
+
+    for(var i=1;i<=9;i++){
+        var nod="";
+        if(i!=1){
+            nod = "display:none;z-index:11;";
+        }
+        $("#inner").append('<img id="img_f_1_'+i+'" class="page" src="image/f_'+i+'_new.png" style="'+nod+'" >');
+
+
+    }
+</script>
+<script>
+
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: 2500,
+            autoplayDisableOnInteraction: false
+
+        });
+</script>
+</body>
+</html>
