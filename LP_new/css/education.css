@@ -39,9 +39,9 @@
 .person_detail_inner .use_way{overflow: hidden;position: relative;height: 63px}
 .person_detail_inner .use_way .sug{float: left;height:50px;margin-right:3px}
 .person_detail_inner .use_way .sug_desc{float: left;width:70%;position: relative;overflow: hidden;text-overflow: ellipsis;padding-left:7px;color: #231815}
-.person_detail_inner .lesson_day{padding-right: 1px;overflow: hidden;text-overflow: ellipsis}
-.person_detail_inner .lesson_day .day--select{display:inline-block;margin-left:2px}
-.person_detail_inner .lesson_day .day{display: inline-block;width:43px;height: 18px;line-height: 18px;background:#e0e1e1;text-align: center;color:#231815}
+.person_detail_inner .lesson_day{padding-right: 1px;overflow: hidden;text-overflow: ellipsis;width:100%;}
+.person_detail_inner .lesson_day .day--select{display:inline-block;margin-left:2px;width:73%}
+.person_detail_inner .lesson_day .day{display: inline-block;width:30%;height: 18px;line-height: 18px;background:#e0e1e1;text-align: center;color:#231815}
 .person_detail_inner .lesson_day .day_active{background:#e4bc6b;color:#614e24}
 .design_position{width: 100%;margin-bottom: 10px;position: relative}
 .position_select{/*position: relative;*/width:73%;overflow: hidden;display: inline-block;/*text-align: center*/;height: 19px;}
