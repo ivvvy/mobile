@@ -1,0 +1,33 @@
+/*.head{position: relative;}*/
+/*.logo_header{float: left}
+.link_icon{float:right;position: relative;z-index: 999}
+.link_icon span{background: url(../image/nav_icon.png) no-repeat;width: 25px;height: 13px;background-size: 25px 13px;position: absolute;right: 10px;top:10px}*/
+.slider_wrapper{position: relative;width: 100%;overflow: hidden;margin-top:5px;margin-bottom:5px}
+.swiper-container {width: 100%;height: 100%;}
+.swiper-slide{position:relative;text-align: center;font-size: 14px;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;  -webkit-justify-content: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;}
+.swiper-slide a{display: block}
+.banner{position: relative;width:100%;overflow: hidden}
+.banner img{max-width: 100%;max-height: 100%;display: block;overflow: hidden;width: 100%;/*height:122px*/}
+.banner .exchange{display: block;position: absolute;color: #fff;right: 4%;background:#ce0a20;width: 85px;height: 20px;line-height: 20px;text-align: center;top:65%;font-size: 14px}
+.quick_nav{padding: 3.125% 3.125% 0 3.125%;background-color: #fff;}
+.quick_entry_link{width:25%;float: left;color: #231815;text-align: center;display: block;padding-bottom: 12px;overflow: hidden}
+.quick_icon{display: inline-block;font-size:14px }
+.quick_entry_link img{width:45px;height:45px;display: block;margin:0 auto 10px auto;overflow: hidden}
+.quick_nav:after{clear: both;content: "."; height: 0;visibility: hidden;font-size: 0;display: block;}
+.education{margin-top: 10px;position: relative;}
+.education a{max-width: 100%;max-height: 100%;display: block;overflow: hidden;width: 100%;position:relative}
+.education .edu{max-width: 100%;max-height: 100%;display: block;overflow: hidden;width: 100%;position:relative}
+.education_floor{margin-bottom:8px;position: relative}
+/*.education_floor .edu{max-width: 100%;max-height: 100%;display: block;overflow: hidden;width: 100%;position:relative}*/
+.education_floor .pic{position: relative;width:120px;max-height: 100%;text-align: center}
+.education_floor .name{position: absolute;top:50px;right: 10px;color: #3e3a39;text-align: center;}
+.education_floor .title{position: absolute;top:50px;right: 20px;color: #3e3a39;text-align: center;}
+.education_floor .service{position: absolute;top:50px;right: 20px;color: #3e3a39;text-align: center;}
+.education_floor .area{position: absolute;top:50px;right: 10px;color: #3e3a39;text-align: center;}
+#bottom{width: 100%;position: relative;min-width:320px;overflow: hidden;font-size:16px;color:#ffffff;padding: 0 20px 10px 15px}
+#footer{text-align: center;height: 80px;background:#4c4948;}
+.footer_links{width: 180px;margin: 0px auto;padding-top: 7px;}
+.footer_links li{display: table-cell;height: 10px;line-height: 10px;width: 90px;}
+.footer_links li:first-child{border-right: 1px solid #fff;}
+.footer_links li a{display: inline-block;width: 72px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;line-height: 1.1em}
+#footer p{font-size: 12px;padding-top: 10px;line-height: 1.1em;color: #c1c2c2}

@@ -1,0 +1,31 @@
+.item_content{margin-top:10px}
+.item_content_pic{width:100%;overflow: hidden;display: inline-block;position: relative;}
+.item_content_pic img{overflow: hidden;/*height:182px;*/}
+.product_name{text-transform: uppercase;position: absolute;color: #231815;top:37%;right:10px;font-size:21px;padding-bottom: 10px;}
+.bottom_line{border-bottom:5px solid #2fa8e1;width:50px;display: block;position: absolute;top:51%;right:57px}
+.education_person{margin-top:-6px;width: 100%;background:#eeeeef;height: 100%;margin-bottom: 10px}
+.person_detail{width: 100%;}
+.person_detail_inner{text-align: left;color: #cf0a20}
+.person_detail_inner .title_text{font-size:20px;color: #231815;display:block;height:32px;overflow:hidden;padding:10px 5px 0px 15px}
+.main_content{/*margin-top:10px;*/font-size:14px;line-height: 1.5 }
+.main_desc{padding:10px 1px 0 15px;overflow: hidden}
+.person_detail_inner .title_lesson{overflow: hidden;text-overflow: ellipsis;padding-right: 3px;/*white-space: nowrap*/}
+.person_detail_inner .use_way{overflow: hidden;position: relative;height:63px}
+.person_detail_inner .use_way .sug{float: left;height:50px}
+.person_detail_inner .use_way .sug_desc{float: left;width:70%;position: relative;overflow: hidden;text-overflow: ellipsis;padding-left:10px;color: #231815}
+.person_detail_inner .title_lesson .lesson_name{color:#231815}
+.person_detail_inner .lesson_day{padding-right: 1px;overflow: hidden;text-overflow: ellipsis;margin-top:2px}
+.person_detail_inner .lesson_day .day--select{display:inline-block;margin-left:2px}/*12.14*/
+.person_detail_inner .lesson_day .day{display: inline-block;width:43px;height: 18px;line-height: 18px;background:#e0e1e1;text-align: center;color:#231815}
+.person_detail_inner .lesson_day .day_active{background:#cf0a20;color:#fff}
+.points{margin-top: 5px}
+.number{overflow: hidden;font-size: 0;color:#cf0a20;margin-top:8px;margin-bottom: 4px}
+.number_msg{display: inline-block;height: 15px;font-size: 14px;float: left;white-space: nowrap;line-height:24px;color:#cf0a20}
+.quantity_wrapper{display: inline-block;margin-left:12px;}
+.minus,.quantity,.add{float: left;font-size: 14px;text-align: center}
+.minus,.add{background: url(../image/number.png) no-repeat 11px 7px #cf0a20;background-size:10px 23px;display: block;width: 32px;overflow: hidden;text-indent: -200px;}
+.minus{background-position:11px -12px }
+.quantity{color:#231815;background: #e0e1e1; height: 21px;width: 60px;border-radius: 0;border: none;-webkit-appearance: none;line-height: 21px}
+.points .points_cost{display: inline-block;background: #cf0a20;color:#fff;height: 16px;line-height: 16px;text-align:center;width: 50px;margin-left:2px}
+.btn_cart{margin-top:5px;border-top:1px dashed #7d7d7d;}
+.action_link{margin-top: 10px;/*margin-bottom: 10px;*/padding-left:15px;padding-bottom: 10px;font-size: 0}

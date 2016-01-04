@@ -1,0 +1,23 @@
+.wrapper_title{position: relative;overflow: hidden;margin-bottom: 10px;margin-top:10px}
+.wrapper_title img{width: 100%;}
+.list_wrapper{width: 100%;font-family: "microsoft yahei"}
+.list_wrapper *{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box;box-sizing: border-box}
+.list_wrapper_inner{width: 100%;overflow: hidden}
+.list_wrapper_inner li{float: left;width:48%;font-size: 12px;overflow: hidden;margin-bottom: 10px;height:243px}/*12.14*/
+.list_wrapper_inner li:nth-child(odd){margin-right:11px}
+.list_wrapper_inner li a{display: block;}
+/*.list_wrapper_inner li p:not(.img){padding:5px;}*/
+.list_wrapper_inner li .p_content{margin: 0 auto;color:#797878;font-size: 14px;position: relative;border-bottom:4px solid #30a8e1;box-sizing:border-box}
+.list_wrapper_inner li .p_content .img{height: 103px;overflow: hidden}/*12.14*/
+.list_wrapper_inner li .p_content .img img{height:100%;overflow: hidden}/*12.14*/
+.list_wrapper_inner li .p_detail_inner{background:#eeefef;margin-top:-2px}
+.list_wrapper_inner li .p_title{height:51px;line-height: 1.2;overflow: hidden;vertical-align: middle;;font-size: 16px;text-overflow: ellipsis;padding:15px 0 0 5px;color: #231815;font-weight:bold;}
+.list_wrapper .p_score{white-space: nowrap;padding:5px;line-height: 1.5;overflow: hidden;height:72px}/*12.14*/
+.list_wrapper .p_score .use{width:100%;overflow: hidden;text-overflow:ellipsis}
+.list_wrapper .p_score .study{color:#797878;height:20px;overflow: hidden;text-overflow:ellipsis;padding-right:5px}
+.list_wrapper .p_score .teacher{overflow: hidden;text-overflow: ellipsis;height: 20px}
+.list_wrapper .p_score .teacher span{color:#797878}
+.list_wrapper .p_score .use_score{height:25px;}
+.list_wrapper_inner li .lesson_title{display: block}
+.list_wrapper_inner li .lesson{color:#797878;height:20px;overflow: hidden;display: block;text-overflow: ellipsis}
+.list_wrapper_inner li .total{display: inline-block;width:35px;background:#ce091f;color:#fff;text-align: center;font-weight: bold;height: 15px;line-height: 15px;margin-right:5px}

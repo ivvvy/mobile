@@ -1,0 +1,23 @@
+.head{margin-bottom:10px}
+.user_bg{background: url(../image/user_bg.png) no-repeat;width:100%;height:176px;background-size: 100% 176px;}
+.users_info{width: 100%;position: relative;color: #ffffff;height: 70px}
+.user_pic {/*background:rgba(186,140,64,.5);*/ width: 130px; height: 130px;position: relative;border-radius: 50%;margin-top: -40px;margin-left: 10px;float: left;border:6px solid #b7b7b8;}
+.own_img{background: url(../image/myimg.png) no-repeat;width:120px;height:120px;background-size: 100%;position: absolute;top:-1px; border-radius: 50%;left:-1px;border:1px solid #ce091f}
+.client{float:left;padding-top: 30px;padding-left: 10px;position: relative;}
+.client_name{font-size: 24px;color: #231815;font-weight: bold}
+.sex_icon_m{background: url(../image/sex_icon.png) no-repeat;width: 16px;height: 19px;background-size: 100%;position: absolute;top:35px;left: 90px;}
+.sex_icon_w{background: url(../image/sex_icon_02.png) no-repeat;width: 16px;height:24px;background-size: 100%;position: absolute;top:30px;left: 90px;}
+.user_options{margin-top: 30px;width: 100%;background:#efefef;color:#231815}
+.my_lists{font-size: 18px}
+.my_lists dl{margin-bottom: 20px;display: block}
+.my_lists dd{position: relative;border-bottom: 1px solid #656464;padding-left: 15px;line-height: 44px;color: #231815}
+.my_lists dd:last-child{border-bottom: none}
+.customer_name{color: #231815;font-size: 16px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis}
+.my_lists dl .address{padding-right: 15px;/*line-height:22px;*/height:70px;line-height: 1.1;/*text-align: center;*/padding-top: 15px;overflow: hidden;}
+.add_title{float: left}
+.user_add{font-size: 17px;color: #231815;text-overflow: ellipsis;position: relative;float: left;width: 65%;overflow: hidden}
+.user_studio{font-size: 17px;color: #fff;text-align: center;text-overflow: ellipsis;position: relative}
+.add_input{font-size: 17px;color: #fff;text-overflow: ellipsis;border: none;background:rgba(0,0,0,1);width:64%;position: absolute;top:12px;left:98px;height: 50px;}
+.edit_info{width: 100%;height: 36px;line-height: 36px;text-align: center;background:#efefef;color:#231815;margin-top:10px;margin-bottom: 30px;font-size:20px;font-weight: bold}
+.edit_info a{display: block}
+
