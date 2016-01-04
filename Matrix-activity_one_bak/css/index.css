@@ -1,0 +1,128 @@
+.u--arrow{position: fixed;bottom:0; left:50%; z-index: 150; width:44px; height: 80px;margin-left:-20px;}
+.u--arrow p{background:url(../images/arrow.png) no-repeat;position: absolute;width:44px;height:20px;-webkit-animation:start 1.5s infinite ease-in-out;  -moz-animation:start 1.5s infinite ease-in-out;animation:start 1.5s infinite ease-in-out;}
+.u--arrow--two{position:absolute;left:50%; z-index: 150; width:44px; height: 80px;margin-left:-15px;bottom:0}
+.u--arrow--two p{background:url(../images/arrow.png) no-repeat;position: absolute;width:44px;height:20px;-webkit-animation:start 1.5s infinite ease-in-out;  -moz-animation:start 1.5s infinite ease-in-out;animation:start 1.5s infinite ease-in-out;}
+.swiper-container{width: 100%;height: 100%;margin-left: auto;margin-right: auto;}
+.swiper-slide{position: relative}
+.swiper-slide--inner{background:url(../images/gift_bg.png) no-repeat;position: absolute;width:100%;height:100%;background-size:100%;-webkit-background-size:100%;display:none;z-index:99}
+.swiper-slide--box{background:url(../images/gift_bg_01.png) no-repeat;position: absolute;width:100%;height:100%;background-size:100%;-webkit-background-size:100%}
+.swiper-slide--inner .wish{color:#ffffff;position: absolute;bottom:90px;left: 50%;margin-left:-85px;font-size:18px;display:none}
+.swiper-slide--box .wish{color:#ffffff;position: absolute;bottom:90px;left: 50%;margin-left:-85px;font-size:18px;display:none}
+.swiper-slide--wrapper{background:url(../images/bg.png) no-repeat;position: absolute;width:100%;height:100%;background-size:100%;-webkit-background-size:100%}
+
+/*.swiper-slide--wrapper .new-year{position:relative;width:100%;height:318px;left:50%;margin-left: -130px;margin-bottom:30px}*/
+/*.swiper-slide--wrapper .new-year .wish--word{background:url(../images/newyear.png) no-repeat;width:100%;height:100%;position: absolute;}*/
+.swiper-slide--wrapper .wish--word{position: absolute;/*width:70%;left: 13%*/width:100%}
+.swiper-slide--wrapper .wish--word--move{animation:top 1s ease;-webkit-animation:top 1s ease;-moz-animation:top 1s ease;}
+.swiper-slide--wrapper .slogan{position:absolute;width:100%;/*left:31%*/}
+.swiper-slide--wrapper .slogan--move{animation:bottom 1.1s ease;-webkit-animation:bottom 1.1s ease;-moz-animation:bottom 1.1s ease;}
+.swiper-slide--word{background:url(../images/bg_01.png) no-repeat;position: absolute;width:100%;height:100%;background-size:100%;-webkit-background-size:100%}
+.swiper-slide--word .wish--word{position: absolute;width:100%;/*left: 13%*/}
+.swiper-slide--word .wish--word--move{animation:top 1s ease;-webkit-animation:top 1s ease;-moz-animation:top 1s ease;}
+.swiper-slide--word .slogan{position:absolute;width:100%;/*left: 32%*/}
+.swiper-slide--word .slogan--move{animation:bottom 1.1s ease;-webkit-animation:bottom 1.1s ease;-moz-animation:bottom 1.1s ease;}
+/*.swiper-slide--wrapper .poem{position:relative;width:100%;height:160px;left:50%;margin-left:-51px;display: none}
+.swiper-slide--wrapper .poem .slogan{background:url(../images/poem.png) no-repeat;width:100%;height:160px;position: absolute;}*/
+.u--arrow--one{position:relative;left:50%; z-index: 150; width:44px; height: 80px;margin-left:-20px;}
+.u--arrow--one p{background:url(../images/arrow.png) no-repeat;position: absolute;width:44px;height:20px;-webkit-animation:start 1.5s infinite ease-in-out;  -moz-animation:start 1.5s infinite ease-in-out;animation:start 1.5s infinite ease-in-out;}
+.swiper-slide--wrap{background:url(../images/newyear_bg.png) no-repeat;position: absolute;width:100%;height:100%;background-size:100%;-webkit-background-size:100%}
+.options{position:absolute;width: 100%;}/*12.30*/
+.card--show{position: absolute;width:100%}/*12.30*/
+.photo{position:absolute;width:31%;/*height:20%;*/left:34.5%;overflow: hidden;}/*12.30*/
+#file{position:absolute;width:31%;height:100%;left:34.5%;z-index:99;opacity:0;filter:alpha(opacity=0);}/*12.30*/
+.input--edit{position:absolute;width:100%;}/*12.30*/
+.name{position:absolute;border-top: none;border-left: none;border-right:none;border-bottom:none;/*display:inline-block;*/width:56%;text-align:center;padding-bottom:5px;outline:0;-webkit-appearance:none;background:rgba(0,0,0,0);color:#fff;border-radius:0;font-size:18px;left:40%;margin-top:-2px}/*12.30*/
+/*.photo{position:relative;width:33%;height:20%;left:33%;overflow:hidden;border:4px solid #ffffff;border-radius: 50%;background:#fff}*/
+.photo_border{position: absolute;width:100%}
+/*#file{position: absolute;opacity:0;filter:alpha(opacity=0);width:100%;height:100%;-webkit-appearance: none;overflow: hidden;z-index:99}*/
+.teacher{position: relative;padding:0 25px 0 25px;color:#f5df93;font-weight:bold;font-size:18px}
+.teacher .name{border-top: none;border-left: none;border-right:none;border-bottom:none;border-bottom:1px solid rgba(255,255,255,.5);display:inline-block;width:56%;text-align:center;padding-bottom:5px;outline:0;-webkit-appearance:none;background:rgba(0,0,0,0);color:#fff;border-radius:0;font-size:20px}
+input::-webkit-input-placeholder {color:rgba(255,255,255,.5);font-family: "microsoft yahei"}
+input::-moz-placeholder {color:rgba(255,255,255,.5);font-family: "microsoft yahei";text-align: center}
+.txt--input::-webkit-input-placeholder {color:rgba(255,255,255,.5);font-family: "microsoft yahei";text-indent:17%}
+.txt--input::-webkit-input-placeholder::after {color:rgba(255,255,255,.5);font-family: "microsoft yahei";}
+.send--wish{margin-top:10px;padding:0 25px 5px 25px;color:#f5df93;font-weight:bold;position:relative }
+.title--name{position: absolute;line-height:35px;top: 1px;z-index: 10;/*padding-top:5px;*/font-size:20px}
+.txt--input{position: absolute;border: none;text-indent:17%;line-height:35px;/*background: url(../images/line.png) repeat;*/overflow: auto;width:84%;/*top:9px;*/color:#fff;font-size:18px;font-family: "microsoft yahei";background:transparent;left:9%;/*margin-top:17px*/}/*12.30*/
+.send--wish .wish--area{border-top: none;border-left: none;border-right:none;border-bottom:none;border-bottom:1px solid rgba(255,255,255,.5);display:inline-block;width:85%;padding-left:5px;padding-bottom:5px;outline:0;-webkit-appearance:none;background:rgba(0,0,0,0);color:#fff;border-radius:0;height:100%;font-size: 20px}
+.send--wish .wish--area--next{border-top: none;border-left: none;border-right:none;border-bottom:none;border-bottom:1px solid rgba(255,255,255,.5);display:inline-block;width:96%;padding-bottom:5px;outline:0;-webkit-appearance:none;background:rgba(0,0,0,0);color:#fff;border-radius:0;height:100%;margin-top:10px;font-size: 20px}
+.send--gift{margin-left:auto;margin-right:auto;position:absolute;border:1px solid #ffffff;border-radius:5px;width:55%;margin-top:10px;display:block;left:22%}/*12.30*/
+.mobile{border:none;outline:0;-webkit-appearance:none;background:#3e3939;color:rgba(255,255,255,.5);border-radius:5px 5px 0 0;width:100%;height: 40px;font-size:22px;line-height: 40px}
+.mobile::-webkit-input-placeholder{text-align:center}
+.btn{border:none;outline:0;-webkit-appearance:none;background:#ce0a1f;color:#ffffff;width:100%;height: 33px;font-size:20px;font-family:"microsoft yahei";line-height: 33px;border-radius:0 0 5px 5px ;}
+.tips{position:absolute;color:#fff;width:84%;margin-left:auto;margin-right:auto;margin-top: 10px;font-size:14px;display:block;line-height:1.5;left: 9%}/*12.30*/
+.given{position:absolute;width:165px;height:35px;line-height:35px;border:none;border:1px solid #fff;border-radius:3px;background:#df0011;color:#fff;font-size:20px;font-family:"microsoft yahei";outline:none;-webkit-appearance:none;left: 50%;margin-left:-93px;box-sizing:content-box}
+.swiper-share{background:#000;position:absolute;top:0;width:100%;background-size:cover;-webkit-background-size:cover;z-index: 999;display:none}
+.share--area{position: absolute;width:100%;height:100%}
+.share--tip{width:100%;padding:0 25px 20px 25px}
+.video{position: absolute;z-index:999}
+.send--tip{color:#fff;width:75%;margin-left:auto;margin-right:auto;left:13%;position:absolute;display: none}
+.music--box{right: 0;top: 0;width:100px;height: 50px;z-index: 999;position: fixed;background: #000;display:none}
+.music-icon{background-image: url(../images/play.png);background-position: center center; background-size:100%;background-repeat: no-repeat;height: 28px;position: fixed;right:5px;width:28px;/*text-indent:999999;*/z-index: 999;animation:rotate 3s linear infinite 0s;-webkit-animation:rotate 3s linear infinite 0s;-moz-animation:rotate 3s linear infinite 0s;}
+.stop{background-image: url(../images/pause.png);animation:norotate 3s linear infinite 0s;-webkit-animation:norotate 3s linear infinite 0s;-moz-animation:norotate 3s linear infinite 0s;}
+/*箭头指示引导*/
+@-webkit-keyframes start {
+    0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
+    60% {opacity: 1;-webkit-transform: translate(0,0);}
+    100% {opacity: 0;-webkit-transform: translate(0,-8px);}
+}
+@-moz-keyframes start {
+    0%,30% {opacity: 0;-moz-transform: translate(0,10px);}
+    60% {opacity: 1;-moz-transform: translate(0,0);}
+    100% {opacity: 0;-moz-transform: translate(0,-8px);}
+}
+@keyframes start {
+    0%,30% {opacity: 0;transform: translate(0,10px);}
+    60% {opacity: 1;transform: translate(0,0);}
+    100% {opacity: 0;transform: translate(0,-8px);}
+}
+/*送来一份祝福*//*
+@-webkit-keyframes opacity{
+    0%{opacity: 0;}
+    30%,50%{opacity:.5;}
+    80%,100%{opacity:1;}
+}
+@-moz-keyframes opacity{
+    0%{opacity: 0;}
+    30%,50%{opacity:.5;}
+    80%,100%{opacity:1;}
+}
+@keyframes opacity{
+    0%{opacity: 0;}
+    30%,50%{opacity:.5;}
+    80%,100%{opacity:1;}
+}*/
+/*祝福语*/
+@keyframes top{
+    0%{ transform:translateY(-2000px); opacity: 0;}
+    100%{ transform:translateY(0px); opacity: 1;}
+}
+@-webkit-keyframes top{
+    0%{ -webkit-transform: translateY(-2000px); opacity: 0;}
+    100%{ -webkit-transform: translateY(0px); opacity: 1;}
+}
+@-ms-keyframes top{
+    0%{ -webkit-transform: translateY(-2000px); opacity: 0;}
+    100%{ -webkit-transform: translateY(0px); opacity: 1;}
+}
+@-moz-keyframes top{
+    0%{ -webkit-transform: translateY(-2000px); opacity: 0;}
+    100%{ -webkit-transform: translateY(0px); opacity: 1;}
+}
+/*藏头诗*/
+@keyframes bottom{
+    0%{ transform:translateY(2000px); opacity: 0;}
+    100%{ transform:translateY(0px); opacity: 1;}
+}
+@-webkit-keyframes bottom{
+    0%{ -webkit-transform: translateY(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateY(0px); opacity: 1;}
+}
+@-ms-keyframes bottom{
+    0%{ -webkit-transform: translateY(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateY(0px); opacity: 1;}
+}
+@-moz-keyframes bottom{
+    0%{ -webkit-transform: translateY(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateY(0px); opacity: 1;}
+}
