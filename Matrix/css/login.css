@@ -1,0 +1,32 @@
+.wrapper{background: url(../image/login_bg.png) no-repeat #d3d3d4;background-size: cover;-webkit-background-size: cover}
+.wrapper_inner{background: url(../image/bg_04.png) no-repeat #d3d3d4;background-size: cover;-webkit-background-size: cover}
+#container{width: 100%;position: relative;min-width:320px;overflow: hidden;font-size:16px;color:#52626f;}
+.main_inner{padding: 0 40px 0 40px}
+.login_detail{width:100%;height:100%;background:rgba(0,0,0,.5);border-radius: 5px}
+#container .item .txt_input{width:100%;height: 51px;background:rgba(0,0,0,0);border-top:none;border-left:none;border-right:none;border-bottom:1px solid #ffffff;line-height: normal;font-size: 16px;text-indent:2.5em;color:#ffffff;font-family:"microsoft yahei";font-weight: 100;border-radius: 0;}
+#container .item .password_input{border-bottom:none}
+#container .item .icon_user{display: block;position: absolute;background:url(../image/icon_01.png) no-repeat;width: 24px;height: 24px;background-size: 24px 24px;top:12px;left: 15px}
+#container .item_password{margin-top: 15px;}
+#container .item_btn_reg{margin-top: 10px;background: #b9baba}
+#container .item a{font-size: 15px;display: block;color:#ffffff}
+/*.wrapper_one{background: url(../image/register_bg.png) no-repeat #d3d3d4;background-size: cover}*/
+
+#container .item .icon_tel{display: block;position: absolute;background:url(../image/icon_03.png) no-repeat;width: 16px;height:31px;background-size: 16px 31px;top:11px;left: 15px}
+#container .item_code{margin-top:15px}
+#container .item .icon_code{display: block;position: absolute;background:url(../image/icon_04.png) no-repeat;width: 16px;height:31px;background-size: 16px 31px;top:8px;left: 15px}
+#container .item .code_input{width:100%;height: 51px;background:rgba(0,0,0,0);border-top:none;border-left:none;border-right:none;border-bottom:1px solid #ffffff;line-height: normal;font-size: 16px;text-indent:2.5em;color:#ffffff;font-family:"microsoft yahei";font-weight: 100;border-radius: 0;position: relative}
+#container .item_code .receive{width: 35%;height:41px;overflow: hidden;border-radius:5px;text-align: center;line-height: 41px;background: #ce0a20;color:#fff;/*left: 65%;*/position:absolute;font-size:14px;top:0;right:20px}
+#item_password .icon_password_left{left: 15px}
+
+.section_two{width: 100%;position: relative;min-width:320px;overflow: hidden;font-size:0;color:#52626f;}
+.customer_type{position: relative;/*margin-bottom:10px;*/text-align: center;width: 280px;height: 93px;margin-left:auto;margin-right: auto;}
+.customer_type .b_vip{background: url(../image/b_vip.png) no-repeat;width: 124px;height:76px;display:inline-block;background-size: 124px 76px;margin-right:15px}
+.customer_type .d_vip{background: url(../image/z_vip.png) no-repeat;width: 124px;height:76px;display:inline-block;background-size: 124px 76px;}
+.partner{position: relative;margin-bottom:20px;width:100%;height:35px;}
+.partner_left{/*padding:0 35px 0 25px;*/width:260px;margin-left: auto;margin-right: auto}
+.partner span{background: url(../image/partner.png) no-repeat;width:255px;height:33px;background-size:255px 33px;position: absolute;/*right: 60px*/}
+.visitor{color: #fff;font-size: 16px;/*width: 80%;*/text-align: right;width: 220px;margin-left: auto;margin-right: auto;position:relative;/*padding-bottom: 10px;*/margin-top:20px/*bottom:0px*/}
+.visitor a{display: block;margin-bottom: 10px}
+.visitor .visitor_login:after{transform: translateY(-50%)rotate(45deg);-webkit-transform: translateY(-50%)rotate(45deg);border-right:1px solid #fff;}
+.visitor .visitor_login:after{content: ""}
+.visitor .visitor_login:after{position: absolute;right: -15px;top:48%;width:10px;height:10px;border-top:1px solid #fff; }

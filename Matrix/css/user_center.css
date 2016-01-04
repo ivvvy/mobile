@@ -1,0 +1,33 @@
+#common_wrap{width: 100%;position: relative; min-width: 320px;overflow: hidden; margin: 0 auto;font-size: 16px;padding-bottom: 10px;}
+.user_list_show{margin-top:60px}
+#user_img{width: 100%;position:relative;color: #ffffff;padding: 0 10px 10px 15px;}
+.user_info{width:130px;height:130px;position: relative;margin-left: auto;margin-right: auto;border:6px solid #b7b7b8;border-radius: 50%;}
+.user_info .my_img{background: url(../image/myimg.png) no-repeat;width:120px;height:120px;background-size:100%;position: absolute;top:-1px;border-radius: 50%;left:-1px;border: 1px solid #ce091f;}
+.user_name{position:relative;padding-top:10px;text-align: center;color: #231815 }
+.user_name_top{position: relative}
+.user_name .customer_name{font-size: 24px;}
+.user_name .sex_icon_m{background:url(../image/sex_icon.png) no-repeat;width: 16px;height: 19px;background-size: 100%;position: absolute;top:4px;margin-left: 10px}
+.user_name .sex_icon_w{background:url(../image/sex_icon_02.png) no-repeat;width: 16px;height:24px;background-size: 100%;position: absolute;top:0;margin-left: 10px}
+.user_name_bottom{margin-top: 15px;}
+.user_name_bottom{margin-top: 15px;}
+.user_record{}
+.user_record li{display: inline-block;height: 25px;line-height: 25px;}
+.user_record li:first-child{border-right:2px solid #231815;padding-right: 15px;}
+.user_record li:last-child{padding-left: 10px;}
+#user_img:after{clear: both;content: "."; height: 0;visibility: hidden;font-size: 0;display: block;}
+.options_list{margin-top: 20px;font-size: 15px}
+.options_list ul{background:#eeeeef;line-height:58px;/*padding-left:10px;*/}
+.options_list ul li>a{display: block}
+.options_list ul li{border-bottom: 1px solid #666565;position: relative;padding-left:70px;color:#546572;font-size: 17px;}
+.options_list ul li:last-child{border-bottom: none}
+.options_list ul li span{background: url(../image/icon_img.png) no-repeat;background-size: 400%}
+.options_list ul li span{position: absolute;width: 31px;height: 28px;top:30%;left: 20px}
+.options_list ul li .icon_info{background-position: 0 0}
+.options_list ul li .icon_allocate{background-position:3px -34px;}
+.options_list ul li .icon_record{background-position:0 -70px}
+.options_list ul li .icon_cart{background: url(../image/cart.png) no-repeat 0 0;background-size:100%;width:31px;height:29px}/*12.14*/
+.options_list ul li .icon_news{background-position:-93px -40px}
+.arrow_select:after{transform: translateY(-50%)rotate(45deg);-webkit-transform: translateY(-50%)rotate(45deg);border-right: 2px solid #666565;content: "";position: absolute;right: 20px;top: 50%;width: 9px;height: 9px;border-top:2px solid #666565;display:block}
+.news_notice{position: absolute;right: 15px;background:#ce0a20;height: 19px;width: 47px;border-radius:15px;line-height: 19px;text-align: center;top:30%;color: #ffffff;display:none}/*12.14*/
+.login_out{position:relative;margin-top:30px;}
+.login--out--btn{width:100%;display:block;background:#efefef;text-align:center;color:#231815;height:36px;line-height:36px;}

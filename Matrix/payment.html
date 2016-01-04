@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title></title>
+    <link rel="stylesheet" href="css/global.css" type="text/css"/>
+    <link rel="stylesheet" href="css/order.css" type="text/css"/>
+    <link rel="stylesheet" href="css/payment.css"/>
+    <link rel="stylesheet" type="text/css" href="css/mobile-select-area.min.css">
+    <link rel="stylesheet" type="text/css" href="css/dialog.css">
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="js/payfor.js" type="text/javascript"></script>
+    <script src="js/base.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/dialog.min.js"></script>
+    <script type="text/javascript" src="js/mobile-select-area.min.js"></script>
+    <style>
+        @media all and (max-width: 320px){
+            .user_options{margin-top:20px}
+            .detail--address{padding-top:6px}
+            .address--top{padding-top:19px}
+        }
+    </style>
+</head>
+<body>
+    <div id="inner">
+        <div id="main">
+            <div class="head">
+                <div class="logo_header">
+                    <a href="index.html"></a>
+                </div>
+                <div class="link_icon">
+                    <span></span>
+                </div>
+            </div>
+            <div class="common_wrapper">
+                <div class="shop_group">
+                    <div class="shop_group_item">
+                        <ul class="shop_car_list">
+                            <li class="credits_record_list">
+                                <div class="items_content">
+                                    <div class="shop_title_content shop_title_display">
+                                        <a href="">
+                                            <span class="shop_title_name">独享教育</span>
+                                        </a>
+                                        <div class="spend">积分:<span class="spend_points">80</span></div>
+                                    </div>
+                                    <div class="shop_cart_item_core">
+                                        <a href="" class="cart-product-cell_img">
+                                            <img src="image/product.png" class="cart-photo-thumb" />
+                                        </a>
+                                        <div class="shop_cart_item_select">
+                                            <div class="desc_list">
+                                                <div class="cart-product-word clearfix">
+                                                    <div class="cart-product-name">
+                                                        <span>创意小组新成员—谢忠良</span>
+                                                    </div>
+                                                    <div class="cart-product-number">
+                                                        <span>1件</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="delect delect_btn delect_icon">
+                                    <div class="dustbin">
+                                        <i class="waste waste_icon"></i>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="payment_area">
+                    <div class="payment_detail">
+                        <div class="payment_inner">
+                            <div class="payment_head">
+                                <div class="payment_head_inner t-goods">
+                                    <span>所选商品</span>
+                                </div>
+                                <div class="payment_head_inner t-number">
+                                    <span>兑换数量</span>
+                                </div>
+                                <div class="payment_head_inner t-points">
+                                    <span>积分</span>
+                                </div>
+                            </div>
+                            <div class="product_info">
+                                <div class="product_check">
+                                    <div class="column t-goods">
+                                        <span class="select_goods">创意小组新成员—谢忠良</span>
+                                    </div>
+                                    <div class="column t-number">
+                                        <!--<span>兑换数量</span>-->
+                                        <span class="quantity">1</span>
+                                        <!--<div class="quantity_wrapper">
+                                            <a href="javascript:void(0)" class="minus" onClick="setAmount.reduce('#qty_item_1')">-</a>
+                                            <input type="text" class="quantity" value="1" name="qty_item_1" id="qty_item_1" onKeyUp="setAmount.modify('#qty_item_1')" />
+                                            <a href="javascript:void(0)" class="add" onClick="setAmount.add('#qty_item_1')">+</a>
+                                        </div>-->
+                                    </div>
+                                    <div class="column t-points">
+                                        <!--<span class="points_title">积分</span>-->
+                                        <span class="t-cost">80分</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total_cost">
+                        <!--<div class="ticket_option">
+                            <i class="use_ticket ticket_on"></i>
+                            使用优惠券
+                        </div>-->
+                        <div class="total_cost_option">
+                            共需要支付
+                            <span class="all">80</span>
+                            分
+                        </div>
+                    </div>
+                </div>
+                <div class="purchase">
+                    <div class="purchase_btn">
+                        <a href="order_success.html">确认支付</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="all_links">
+            <a href="product.html" id="special"></a>
+            <a href="tools.html" id="hair_tool"></a>
+            <a href="promotions.html" id="promote"></a>
+            <a href="customer_image.html" id="customer"></a>
+            <a href="colors.html" id="colors"></a>
+            <a href="user_center.html" id="user_center"></a>
+        </div>
+        <div id="modal"></div>
+    </div>
+    <div id="mask">
+        <div class="address--box">
+            <div class="address--inner">
+                <div class="address--title">请确认收件人信息</div>
+                <div class="user_options">
+                    <div class="my_lists">
+                        <dl>
+                            <dd>
+                                <span class="title--name">收&ensp;件&ensp;人：</span>
+                                <input class="customer_name" placeholder="李秀丽" />
+                            </dd>
+                            <dd>
+                                <span class="title--name">联系电话：</span>
+                                <input class="customer_name" placeholder="18394756555" />
+                            </dd>
+                            <dd class="select--area">
+                                <span class="title--name">地&emsp;&emsp;区：</span>
+                                <textarea  class="detail--address address--top" id="txt_area" data-value="">上海市长宁区</textarea>
+                                <textarea  id="hd_area" value=""></textarea>
+                            </dd>
+                            <dd class="address--edit">
+                                <span class="title--name">收货地址：</span>
+                                <textarea class="detail--address" placeholder="上海市万航渡路2453号周家桥创意园B栋403室 "></textarea>
+                            </dd>
+                            <dd>
+                                <span class="title--name">邮&emsp;&emsp;编：</span>
+                                <input class="customer_name" placeholder="200051" />
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="options--btn">
+            <a href="javascript:void(0)" class="sure--btn">确认</a>
+            <a href="javascript:void(0)" class="edit--btn">修改</a>
+        </div>
+    </div>
+<script>
+
+    var selectArea = new MobileSelectArea();
+    selectArea.init({trigger:'#txt_area',value:$('#hd_area').val(),data:'__PUBLIC__/Home/js/data.json'});
+</script>
+
+</body>
+</html>

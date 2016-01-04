@@ -1,0 +1,67 @@
+.common_wrapper{width: 100%;position: relative;overflow: hidden;font-size:16px;color:#bb9a57;}
+.shop_group{height:100%;margin-top:20px;color: #231815;margin-bottom: 10px;}
+.shop_group .shop_group_item{background:#eeefef;}
+.shop_group .shop_group_item_list{background:transparent;}
+.shop_group .order_status{height: 100%;overflow: hidden;margin-bottom:5px;background:#eeefef;}
+.shop_group .order_status .contact{width: 100%;display: inline-block;height:35px;line-height: 35px;background:#ce0a20;padding-left: 15px;color: #ffffff}
+.shop_group .order_status_success{}
+.shop_group .order_status .contact_success{background:#888889}
+.shop_group .order_status .order_number{float: left}
+.shop_group .order_status .order_unsure{float: right;padding-right: 12px}
+.shop_group .order_status .order_number_success{color:#9fa0a0}
+.shop_car_list .credits_record_list{padding-bottom: 5px;height:100%;position: relative;border-bottom: 1px solid #d2d3d3}
+.shop_car_list .credits_record_list:last-child{border-bottom: none}
+.shop_car_list .no_bottom{padding-bottom: 0}
+.items_content{margin-left:20px;padding-top:15px;}
+.check_wrapper{width: 23px;height:23px;display: block;position: absolute;}
+.cart_checkbox{background: url(../image/cart_check.png) no-repeat 0 0;width:25px;height: 25px;background-size:50px;display: block}
+.checked{background-position: -27px 0;width: 25px;}
+.shop_title_content{width: 100%;margin-left: 35px;padding-top:3px;position: relative}
+.shop_title_name{font-size: 16px;}
+.shop_title_name:after{transform: translateY(-50%)rotate(45deg);-webkit-transform: translateY(-50%)rotate(45deg);border-right: 2px solid #231815;}
+.shop_title_name:after{content: ""}
+.shop_title_name:after{position: absolute;left:67px;top:57%;width: 10px;height:10px;border-top:2px solid #231815;}
+.shop_title_content .spend{position: absolute;top:0;right:45px;padding-top: 3px}
+.shop_title_content .spend_points{padding-left: 4px}
+.shop_cart_item_core{position: relative;/*overflow: hidden*/padding-right: 6px}
+.shop_cart_item_core .cart-product-cell_img{display: block;width:104px;height:64px;/*position: absolute;*/margin-top:10px;float: left}
+.shop_cart_item_core .cart-product-cell_img .cart-photo-thumb{width:104px;height:64px;border: 1px solid #231815;}
+.cart-product-cell_desc{/*padding-left: 82px;*/padding-top: 8px;float:left;width:60%}
+.cart-product-word{margin-left: 10px;overflow: hidden;height: 74px;}
+.cart-product-name{height:33px;overflow: hidden;text-overflow: ellipsis;color: #546572;}
+.cart-product-number{margin-top:16px}
+.shop_cart_item_record{clear: both;margin-top: 10px;padding-bottom:10px;margin-bottom: 10px}
+.shop_cart_item_select{overflow: hidden}
+.desc_list{padding-top:8px;float: left;width:100%;}
+.delect_btn{right: 10px;bottom:22px}
+.purchase{margin-top: 80px}
+.purchase_btn{width: 100%;background:#ce0a20;height:51px;text-align: center;line-height:51px;color:#fff;border-radius:5px;position: relative}
+
+/*order_success*/
+.shop_car_list .order_finish{color:#898989}
+.shop_title_display{margin-left: 0}
+.shop_title_name_success{color:#898989}
+.shop_title_name_success:after{transform: translateY(-50%)rotate(45deg);-webkit-transform: translateY(-50%)rotate(45deg);border-right: 2px solid #898989;}
+.shop_title_name_success:after{content: ""}
+.shop_title_name_success:after{position: absolute;left:67px;top:57%;width: 10px;height:10px;border-top:2px solid #898989;}
+.shop_title_content .order_wait{position: absolute;top:0;right:10px;padding-top: 3px}
+.shop_title_content .order_success{color:#546572}
+.shop_cart_item_core_success{color:#898989}
+.cart-product-name-success{color:#898989}
+.total_lessons{color: #546572}
+.total_lessons_success{color:#898989}
+.product-point{color: #546572}
+.product-time{color: #231815;font-size: 15px}
+.product-point-success{color: #898989}
+.product-time-success{color: #898989;font-size: 15px}
+.cart-product-point{margin-top: 3px;float: left;color:#cf0a20;}
+.cart-left{padding-left:10px}
+.cart-point{margin-top: 20px;}
+.cart-product-point_success{color: #898989}
+/**/
+
+/*payment*/
+.shop_title_display .spend{right:13px;}
+.delect .waste_icon{background:url(../image/dustbin.png) no-repeat;width: 15px;height: 24px;background-size:100%;display: block}
+.delect_icon{bottom:22px;}
+/**/
