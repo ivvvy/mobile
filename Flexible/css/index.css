@@ -1,0 +1,31 @@
+.wrapper_title{position: relative;overflow: hidden;margin-bottom:0.1333rem;}
+.wrapper_title img{width: 100%;}
+.title_line{position: relative;margin-bottom: 10px;}
+.title_line span{background: url(../image/line.png) repeat-x;display: block;height: 16px}
+.list_wrapper{width: 100%;font-family: "microsoft yahei"}
+.list_wrapper *{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box;box-sizing: border-box}
+.list_wrapper_inner{width: 100%;overflow: hidden}
+.list_wrapper_inner li{float: left;width:49%;/*font-size: 12px;*/overflow: hidden;margin-bottom:0.1333rem;}
+.list_wrapper_inner li:nth-child(odd){margin-right:0.15rem}
+.list_wrapper_inner li a{display: block;background:#383c49}
+/*.list_wrapper_inner li p:not(.img){padding:5px;}*/
+.list_wrapper_inner li .p_content{margin: 0 auto;color:#e4bc6a;/*font-size: 14px;*/position: relative;border-bottom:3px solid #e4bc6b}
+[data-dpr="1"] .list_wrapper_inner li .p_content{font-size: 14px;}
+[data-dpr="2"] .list_wrapper_inner li .p_content{font-size: 28px;}
+[data-dpr="3"] .list_wrapper_inner li .p_content{font-size: 42px;}
+.list_wrapper_inner li .p_content .img{height:2.8rem;overflow: hidden}
+.list_wrapper_inner li .detail_box{height:3.85rem;}
+.list_wrapper_inner li .p_title{height:1.1rem;/*line-height: 1.5;*/overflow: hidden;vertical-align: middle;/*font-size: 16px;*/text-overflow: ellipsis;padding:0.06667rem}
+[data-dpr="1"] .list_wrapper_inner li .p_title{font-size: 16px;}
+[data-dpr="2"] .list_wrapper_inner li .p_title{font-size:32px;}
+[data-dpr="3"] .list_wrapper_inner li .p_title{font-size:48px;}
+.list_wrapper .p_score{white-space: nowrap;padding:0.06667rem;line-height:0.5rem;overflow: hidden;height:1.85rem}
+.list_wrapper .p_score .study{color:#fff;}
+.list_wrapper .p_score .teacher{overflow: hidden;text-overflow: ellipsis;height:0.6rem}
+.list_wrapper .p_score .teacher span{color:#ffffff}
+.list_wrapper .p_score .use_score{height:0.3333rem;}
+.list_wrapper_inner li .lesson_title{display: block}
+.list_wrapper_inner li .lesson{color: #ffffff;height:0.6rem;overflow: hidden;display: block;text-overflow: ellipsis}
+.list_wrapper_inner li .total{display: inline-block;width:1.1rem;background:#e4bc6b;color:#614e24;text-align: center;font-weight: bold;height:0.4rem;line-height:0.4rem}
+.list_wrapper_inner li .exchange_now{padding:0.1rem 0.06667rem 0.13333rem 0.09333rem}
+.list_wrapper_inner li .exchange_now p{background: #e4bc6b;color: #614e24;width:1.9rem;height:0.5rem;line-height:0.5rem;text-align: center;padding: 0}
