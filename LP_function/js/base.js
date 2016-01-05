@@ -33,6 +33,12 @@ $(function(){
     var address=w*0.33125;
     $(".address").css("top",address+"px");
 
+  /*var address=w*0.38125;
+    $(".address--edit").css("top",address+"px");
+
+     var address_h=w*0.203125;
+    $(".address--edit").css("height",address_h+"px");*/
+
     var confirm=w*0.58125;
     $(".confirm").css("top",confirm+"px");
 
