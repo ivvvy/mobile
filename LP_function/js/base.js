@@ -30,14 +30,17 @@ $(function(){
     var tel=w*0.278125;
     $(".tel").css("top",tel+"px");
 
-    var address=w*0.33125;
+   /* var address=w*0.33125;
     $(".address").css("top",address+"px");
-
-  /*var address=w*0.38125;
+*/
+  var address=w*0.35625;
     $(".address--edit").css("top",address+"px");
 
      var address_h=w*0.203125;
-    $(".address--edit").css("height",address_h+"px");*/
+    $(".address--edit").css("height",address_h+"px");
+
+    var word=w*0.040625;
+    $(".word").css("fontSize",word+"px");
 
     var confirm=w*0.58125;
     $(".confirm").css("top",confirm+"px");
