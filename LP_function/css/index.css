@@ -5,9 +5,10 @@
 .add{width:68%;left:16%;position:absolute;}
 #file{position:absolute;width:68%;left:16%;z-index:99;opacity:0;filter:alpha(opacity=0);}
 .input--edit{position:absolute;width:100%;}
-.number{position:absolute;border-top: none;border-left: none;border-right:none;border-bottom:none;width:15%;text-align:center;outline:0;-webkit-appearance:none;background:rgba(0,0,0,0);color:#fff;border-radius:0;font-size:14px;left:27%;font-family:"microsoft yahei";}
+.number{position:absolute;border-top: none;border-left: none;border-right:none;border-bottom:none;width:15%;text-align:center;outline:0;-webkit-appearance:none;background:rgba(0,0,0,0);color:#fff;border-radius:0;font-size:14px;left:27%;font-family:"microsoft yahei";font-family:"microsoft yahei";}
 .name,.tel{position:absolute;border-top: none;border-left: none;border-right:none;border-bottom:none;width:50%;text-align:center;outline:0;-webkit-appearance:none;background:rgba(0,0,0,0);color:#fff;border-radius:0;font-size:14px;left:34%;font-family:"microsoft yahei";}
-.address{position: absolute;border: none;/*background:url(../images/line.png) repeat;*/line-height:32px;overflow: auto;width:51%;top:9px;color:#fff;font-size:18px;font-family: "microsoft yahei";background:transparent;left:34%;/*margin-top:17px*/}
+/*.address--edit{position:relative;width:100%;font-size:14px;color:#FFFFFF;left:15%;}*/
+.address{position: absolute;border: none;/*background:url(../images/line.png) repeat;*/line-height:32px;overflow: auto;width:51%;/*top:9px;*/color:#fff;font-size:14px;font-family: "microsoft yahei";background:transparent;left:34%;/*margin-top:17px*/}
 .confirm{width:32%;position:absolute;left:34%}
 .wrapper--box{display:none}
 .tips{width:100%;position:absolute}
