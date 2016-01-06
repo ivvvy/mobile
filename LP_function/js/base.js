@@ -2,6 +2,8 @@ $(function(){
     var w = document.documentElement.clientWidth || document.body.clientWidth;
     var h = document.documentElement.clientHeight || document.body.clientHeight;
 
+    $('.wrapper').css("height",h+"px");
+
     var wrapper_inner=w*0.28125;
     $(".wrapper--inner").css("top",wrapper_inner+"px");
 
@@ -12,11 +14,14 @@ $(function(){
     $(".add").css("height",wrapper_inner_h+"px");*/
 
     var add=w*0.2875;
-    $(".add").css("top",add+"px");
-    $("#file").css("top",add+"px");
+    $(".upload").css("top",add+"px");
+   /* $(".add").css("top",add+"px");*/
+    /*$("#file").css("top",add+"px");*/
 
-    var file_h=w*0.2625;
+    var file_h=w*0.265625;
+    $(".upload").css("height",file_h+"px");
     $("#file").css("height",file_h+"px");
+     $(".add").css("height",file_h+"px");
 
     var input_edit_h=w*0.575;
     $(".input--edit").css("height",input_edit_h+"px");
@@ -47,21 +52,27 @@ $(function(){
 
     var confirm_h=w*0.075;
     $(".confirm").css("height",confirm_h+"px");
+    $(".btn").css("height",confirm_h+"px");
 
     var tips=w*0.484375;
     $(".tips").css("top",tips+"px");
 
     var close=w*0.415625;
     $(".close").css("top",close+"px");
+    $(".close--btn").css("top",close+"px");
 
-    $(".confirm").bind("click",function(){
+    var close_h=w*0.06875;
+    $(".close--btn").css("height",close_h+"px");
+
+
+    /*$(".confirm").bind("click",function(){
         $(".wrapper--box").show();
     });
 
     $(".close").bind("click",function(){
         $(".wrapper--one").show();
         $(".wrapper--box").hide();
-    });
+    });*/
 
 
 

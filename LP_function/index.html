@@ -14,9 +14,12 @@
 <body>
     <div class="wrapper wrapper--one">
         <div class="wrapper--inner">
-            <img src="images/option_03.png" class="options" />
-            <img src="images/add.png" class="add"/>
-            <input type="file" id="file"/>
+            <img src="images/option_02.png" class="options" />
+            <div class="upload">
+                <input type="hidden" name="hidden_file" id="hidden_file" />
+                <img src="images/add.png" class="add" id="add"/>
+                <input type="file" id="file" name="file" />
+            </div>
         </div>
         <div class="input--edit">
             <input class="number" placeholder=""/>
@@ -26,14 +29,10 @@
                 <div class="word">收货地址:</div>
                 <textarea class="address" rows="2" cols="14" placeholder=""></textarea>
             </div>
-
-            <div class="confirm"></div>
+            <div class="confirm">
+                <a href="wait.html" class="btn"></a>
+            </div>
         </div>
-
-    </div>
-    <div class="wrapper wrapper--box">
-        <img src="images/tips.png" class="tips" />
-        <img src="images/close.png" class="close" />
     </div>
 </body>
 </html>
