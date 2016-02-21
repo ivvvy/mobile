@@ -1,0 +1,44 @@
+.box_inner{position:absolute;width:100%;height:100%;overflow: hidden;background:url(../images/bg_01.png) no-repeat;background-size: 100%;-webkit-background-size: 100%;}
+.swiper-slide .box_inner--text{position:absolute;width:100%;height:100%}
+.swiper-slide .box_inner--text .text{position:absolute;width:100%;display:none}
+.swiper-slide .box_inner--text .first{top:40%}
+.swiper-slide .box_inner--text .second{top:47%}
+.swiper-slide .box_inner--text .third{top:54%}
+.box_inner .bottom_arrow{position:absolute;/*left:35%;*/z-index:150; width:100%; height:50px;bottom:0;}
+.box_inner .bottom_arrow p{position:absolute;background:url(../images/arrow_one.png) no-repeat;width:100%;height:21px;background-size: 100%;  -webkit-background-size: 100%;-webkit-animation:start 1.5s infinite ease-in-out; -moz-animation:start 1.5s infinite ease-in-out;animation:start 1.5s infinite ease-in-out;}
+.box_inner--diff{position:absolute;width:100%;height:100%;overflow: hidden;background:url(../images/bg_02.png) no-repeat;background-size: 100%;-webkit-background-size: 100%;}
+.swiper-slide .box_inner--second{position:absolute;width:100%;height:100%}
+.swiper-slide .box_inner--second .img--right{position:absolute;width:100%;display:none}
+.swiper-slide .box_inner--second .pic{top:22%}
+.swiper-slide .box_inner--second .txt{top:25%;}
+.swiper-slide .box_inner--second .txt--one{top:65%;}
+.box_inner--diff .bottom_arrow{position:absolute;/*left:35%;*/z-index:150; width:100%; height:50px;bottom:0;}
+.box_inner--diff .bottom_arrow p{position:absolute;background:url(../images/arrow_one.png) no-repeat;width:100%;height:21px;background-size: 100%;  -webkit-background-size: 100%;-webkit-animation:start 1.5s infinite ease-in-out; -moz-animation:start 1.5s infinite ease-in-out;animation:start 1.5s infinite ease-in-out;}
+.box_inner--button{position:absolute;width:100%;height:100%;overflow: hidden;background:url(../images/bg_03.png) no-repeat;background-size: 100%;-webkit-background-size: 100%;}
+.box_inner--button .select{position:absolute;width:85%;left:8%}
+.box_inner--button .select .little{width:75%;position: absolute;left:12%;display:block}
+.box_inner--button .select .middle{width:75%;position: absolute;left:12%;display:block}
+.box--one{}
+.swiper-slide .box_inner--little{position:absolute;width:100%;height:100%}
+.swiper-slide .box_inner--little .txt--two{position:absolute;width:100%;}
+.swiper-slide .box_inner--little .top--one{top:20%}
+.swiper-slide .box_inner--little .top--two{top:25%}
+/*箭头指示引导*/
+@-webkit-keyframes start {
+    0%{opacity:1;-webkit-transform: translate(0,10px);}
+    30%{opacity:0.8;-webkit-transform: translate(0,6px);}
+    60% {opacity:0.6;-webkit-transform: translate(0,0);}
+    100% {opacity:0.4;-webkit-transform: translate(0,-8px);}
+}
+@-moz-keyframes start {
+    0%{opacity:1;-webkit-transform: translate(0,10px);}
+    30%{opacity:0.8;-webkit-transform: translate(0,6px);}
+    60% {opacity:0.6;-webkit-transform: translate(0,0);}
+    100% {opacity:0.4;-webkit-transform: translate(0,-8px);}
+}
+@keyframes start {
+    0%{opacity:1;-webkit-transform: translate(0,10px);}
+    30%{opacity:0.8;-webkit-transform: translate(0,6px);}
+    60% {opacity:0.6;-webkit-transform: translate(0,0);}
+    100% {opacity:0.4;-webkit-transform: translate(0,-8px);}
+}
