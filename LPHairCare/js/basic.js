@@ -2,6 +2,8 @@ $(function(){
     var w = document.documentElement.clientWidth||document.body.clientWidth;
     var h = document.documentElement.clientHeight||document.body.clientHeight;
 
+    /*$('.box_inner--button').css("height",h+"px");*/
+
     var select=w*0.3253;
     $(".select").css("height",select+"px");
 
@@ -17,4 +19,8 @@ $(function(){
 
     var middle=w*0.2;
     $(".middle").css("top",middle+"px");
-});
+
+})
+
+
+

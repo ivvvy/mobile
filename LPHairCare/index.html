@@ -57,7 +57,66 @@
                     <div class="box_inner--little">
                         <img src="images/txt3a.png" class="txt--two top--one" />
                         <img src="images/txt3b.png" class="txt--two top--two" />
-                        <img />
+                        <img src="images/step_01.png" class="pro pro--one" />
+                        <img src="images/step_02.png" class="pro pro--two" />
+                        <img src="images/step_03.png" class="pro pro--three" />
+                    </div>
+                    <div class="bottom_arrow--one">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box--one">
+                <div class="box_inner--diff">
+                    <div class="box_inner--little">
+                        <img src="images/step_detail_01.png" class="step_detail step_detail--one" />
+                        <img src="images/step_detail_02.png" class="step_detail step_detail--two" />
+                        <img src="images/step_detail_03.png" class="step_detail step_detail--three" />
+                    </div>
+                    <div class="bottom_arrow--two">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box--one">
+                <div class="box_inner--diff">
+                    <div class="box_inner--little">
+                        <img src="images/txt4a.png" class="txt--three title--one"/>
+                        <img src="images/process_01.png" class="txt--three process--one"/>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box--two">
+                <div class="box_inner--diff">
+                    <div class="box_inner--middle">
+                        <img src="images/txt5a.png" class="txt--two top--one" />
+                        <img src="images/txt5b.png" class="txt--two top--two" />
+                        <img src="images/pro_01.png" class="pro pro--one" />
+                        <img src="images/pro_02.png" class="pro pro--two" />
+                        <img src="images/pro_03.png" class="pro pro--three" />
+                    </div>
+                    <div class="bottom_arrow--one">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box--two">
+                <div class="box_inner--diff">
+                    <div class="box_inner--middle">
+                        <img src="images/step_detail_04.png" class="step_detail step_detail--one" />
+                        <img src="images/step_detail_05.png" class="step_detail step_detail--two" />
+                        <img src="images/step_detail_06.png" class="step_detail step_detail--three" />
+                    </div>
+                    <div class="bottom_arrow--two">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box--two">
+                <div class="box_inner--diff">
+                    <div class="box_inner--middle">
+                        <img src="images/txt6a.png" class="txt--three title--one"/>
+                        <img src="images/process_02.png" class="txt--three process--one"/>
                     </div>
                 </div>
             </div>
@@ -79,6 +138,10 @@
             onSlideChangeStart: function () {
                 $('.text').fadeOut(1000,function(){});
                 $('.img--right').fadeOut(1000,function(){});
+                $('.txt--two').fadeOut(1000,function(){});
+                $('.pro').fadeOut(1000,function(){});
+                $('.step_detail').fadeOut(1000,function(){});
+                $('.txt--three').fadeOut(1000,function(){});
             },
             onSlideChangeEnd: function () {
                 var index = swiper.activeIndex;
@@ -98,38 +161,45 @@
                         });
                         break;
                     case 3:
-                     /*   $('.top--one').fadeIn(1000,function(){
-                            $('.top--two').fadeIn(1000,function(){});
-                        });*/
+                        $('.top--one').fadeIn(1000,function(){
+                            $('.top--two').fadeIn(1000,function(){
+                                $('.pro--one').fadeIn(1000,function(){
+                                    $('.pro--two').fadeIn(1000,function(){
+                                        $('.pro--three').fadeIn(1000,function(){});
+                                    });
+                                });
+                            });
+                        });
                         break;
+                    case 4:
+                        $('.step_detail--one').fadeIn(1000,function(){
+                            $('.step_detail--two').fadeIn(1000,function(){
+                                $('.step_detail--three').fadeIn(1000,function(){});
+                            });
+                        });
+                        break;
+                    case 5:
+                        $('.title--one').fadeIn(1000,function(){
+                            $('.process--one').fadeIn(1000,function(){});
+                        });
+                        break;
+
                 }
             }
         });
         function clickIndex(index){
             switch (index){
                 case 1:
-                    $(".box--one").css("display","block");
+                    $('.box--two').hide();
                     break;
                 case 2:
-                    alert('fine');
+                    $('.box--one').hide();
+
                     break;
             }
             swiper.slideNext();
         }
-       /* function clickhair(className){
-            switch (className){
-                case 'little':
-                   alert('sb');
-                    break;
-                case 'middle':
-                    alert('fine');
-                    break;
-            }
-            swiper.slideNext();
-        }
-        $(".little").click(function(){
-            clickhair();
-        })*/
+
     </script>
 </body>
 </html>
