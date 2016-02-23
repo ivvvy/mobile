@@ -22,10 +22,11 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="box_inner">
-                     <div class="box_inner--text">
-                          <img src="images/txt1a.png" class="text first" />
-                          <img src="images/txt1b.png" class="text second" />
-                          <img src="images/txt1c.png" class="text third" />
+                     <div class="box_inner--text swiper-lazy">
+                         <img data-src="images/txt1a.png" class="text first swiper-lazy" />
+                         <img data-src="images/txt1b.png" class="text second swiper-lazy" />
+                         <img data-src="images/txt1c.png" class="text third swiper-lazy" />
+                         <div class="swiper-lazy-preloader"></div>
                      </div>
                     <div class="bottom_arrow">
                         <p></p>
@@ -74,6 +75,7 @@
         var swiperH = new Swiper('.swiper-container-h', {
             direction: 'vertical',
             slidesPerView:1,
+            lazyLoading : true,
             paginationClickable: true,
             onSlideChangeStart: function () {
                 $('.text').fadeOut(1000,function(){});
