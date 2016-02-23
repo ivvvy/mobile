@@ -84,7 +84,7 @@
                 abc = swiperV.activeIndex;
                 switch (abc){
                     case 0:
-                        setTimeout(window.location.href="index.html#little",5000);
+                       /* setTimeout(window.location.href="index.html#little",5000);*/
                         $('.top--one').fadeIn(1000,function(){
                             $('.top--two').fadeIn(1000,function(){
                                 $('.pro--one').fadeIn(1000,function(){
@@ -110,6 +110,7 @@
                 }
             }
         });
+        $.cookie("page","2");
     </script>
 </body>
 </html>

@@ -84,7 +84,7 @@
                 var abc = swiperV.activeIndex;
                 switch (abc){
                     case 0:
-                        setTimeout(window.location.href="index.html#little",5000);
+                       /* setTimeout(window.location.href="index.html#little",5000);*/
                         $('.top--one').fadeIn(1000,function(){
                             $('.top--two').fadeIn(1000,function(){
                                 $('.pro--one').fadeIn(1000,function(){
@@ -111,101 +111,7 @@
             }
         });
 
-     /*   var swiperH = new Swiper('.swiper-container-h', {
-            direction: 'vertical',
-            slidesPerView: 1,
-            paginationClickable: true,
-            onSlideChangeStart: function () {
-                $('.txt--two').fadeOut(1000,function(){});
-                $('.pro').fadeOut(1000,function(){});
-                $('.step_detail').fadeOut(1000,function(){});
-                $('.txt--three').fadeOut(1000,function(){});
-            },
-            onSlideChangeEnd: function () {
-                var index = swiperH.activeIndex;
-                switch (index){
-                    case 0:
-                        $('.top--one').fadeIn(1000,function(){
-                            $('.top--two').fadeIn(1000,function(){
-                                $('.pro--one').fadeIn(1000,function(){
-                                    $('.pro--two').fadeIn(1000,function(){
-                                        $('.pro--three').fadeIn(1000,function(){});
-                                    });
-                                });
-                            });
-                        });
-                        break;
-                    case 1:
-                        $('.step_detail--one').fadeIn(1000,function(){
-                            $('.step_detail--two').fadeIn(1000,function(){
-                                $('.step_detail--three').fadeIn(1000,function(){});
-                            });
-                        });
-                        break;
-                    case 2:
-                        $('.title--one').fadeIn(1000,function(){
-                            $('.process--one').fadeIn(1000,function(){});
-                        });
-                        break;
-                }
-            }
-        });*/
-
-      /*  var swiperT = new Swiper('.swiper-container-h-one', {
-            direction: 'vertical',
-            slidesPerView: 1,
-            paginationClickable: true,
-            onSlideChangeStart: function () {
-                $('.txt--two').fadeOut(1000,function(){});
-                $('.pro').fadeOut(1000,function(){});
-                $('.step_detail').fadeOut(1000,function(){});
-                $('.txt--three').fadeOut(1000,function(){});
-            },
-            onSlideChangeEnd: function () {
-                var index = swiperT.activeIndex;
-                switch (index){
-                    case 0:
-                        $('.top--one').fadeIn(1000,function(){
-                            $('.top--two').fadeIn(1000,function(){
-                                $('.pro--one').fadeIn(1000,function(){
-                                    $('.pro--two').fadeIn(1000,function(){
-                                        $('.pro--three').fadeIn(1000,function(){});
-                                    });
-                                });
-                            });
-                        });
-                        break;
-                    case 1:
-                        $('.step_detail--one').fadeIn(1000,function(){
-                            $('.step_detail--two').fadeIn(1000,function(){
-                                $('.step_detail--three').fadeIn(1000,function(){});
-                            });
-                        });
-                        break;
-                    case 2:
-                        $('.title--one').fadeIn(1000,function(){
-                            $('.process--one').fadeIn(1000,function(){});
-                        });
-                        break;
-                }
-            }
-        });*/
-
-       /* function clickIndex(index){
-            switch (index){
-                case 1:
-                    alert('good');
-                   $('#s--two').hide();
-                       /!* swiperH.slideTo(0);*!/
-                break;
-                case 2:
-                    alert('fine');
-//                    swiperV.slideTo(4);
-                    $('#s--one').hide();
-                break;
-            }
-            swiperV.slideNext();
-        }*/
+        $.cookie("page","2");
     </script>
 </body>
 </html>
