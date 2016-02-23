@@ -18,14 +18,14 @@
     <title></title>
 </head>
 <body>
-    <div class="swiper-container swiper-container-v">
+    <div class="swiper-container swiper-container-h">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="box_inner">
                      <div class="box_inner--text">
-                          <img src="images/txt1a.png" class="text first cover" />
-                          <img src="images/txt1b.png" class="text second cover" />
-                          <img src="images/txt1c.png" class="text third cover" />
+                          <img src="images/txt1a.png" class="text first" />
+                          <img src="images/txt1b.png" class="text second" />
+                          <img src="images/txt1c.png" class="text third" />
                      </div>
                     <div class="bottom_arrow">
                         <p></p>
@@ -44,93 +44,16 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide swiper-no-swiping">
-                <div class="box_inner--button">
-                    <div class="select">
-                         <span class="little" onclick="clickIndex(1)"></span>
-                         <span class="middle" onclick="clickIndex(2)"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide" id="box--one">
-                <div class="swiper-container swiper-container-h">
-                   <div class="swiper-wrapper">
-                       <div class="swiper-slide">
-                           <div class="box_inner--diff">
-                               <div class="box_inner--little">
-                                   <img src="images/txt3a.png" class="txt--two top--one" />
-                                   <img src="images/txt3b.png" class="txt--two top--two" />
-                                   <img src="images/step_01.png" class="pro pro--one" />
-                                   <img src="images/step_02.png" class="pro pro--two" />
-                                   <img src="images/step_03.png" class="pro pro--three" />
-                               </div>
-                               <div class="bottom_arrow--one">
-                                   <p></p>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="swiper-slide">
-                           <div class="box_inner--diff">
-                               <div class="box_inner--little">
-                                   <img src="images/step_detail_01.png" class="step_detail step_detail--one " />
-                                   <img src="images/step_detail_02.png" class="step_detail step_detail--two" />
-                                   <img src="images/step_detail_03.png" class="step_detail step_detail--three" />
-                               </div>
-                               <div class="bottom_arrow--two">
-                                   <p></p>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="swiper-slide">
-                           <div class="box_inner--diff">
-                               <div class="box_inner--little">
-                                   <img src="images/txt4a.png" class="txt--three title--one"/>
-                                   <img src="images/process_01.png" class="txt--three process--one"/>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-                </div>
-            </div>
-            <div class="swiper-slide" id="box--two">
-                <div class="swiper-container swiper-container-h-one">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="box_inner--diff">
-                                <div class="box_inner--middle">
-                                    <img src="images/txt5a.png" class="txt--two top--one" />
-                                    <img src="images/txt5b.png" class="txt--two top--two" />
-                                    <img src="images/pro_01.png" class="pro pro--one" />
-                                    <img src="images/pro_02.png" class="pro pro--two" />
-                                    <img src="images/pro_03.png" class="pro pro--three" />
-                                </div>
-                                <div class="bottom_arrow--one">
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="box_inner--diff">
-                                <div class="box_inner--middle">
-                                    <img src="images/step_detail_04.png" class="step_detail step_detail--one" />
-                                    <img src="images/step_detail_05.png" class="step_detail step_detail--two" />
-                                    <img src="images/step_detail_06.png" class="step_detail step_detail--three" />
-                                </div>
-                                <div class="bottom_arrow--two">
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                           <div class="box_inner--diff">
-                               <div class="box_inner--middle">
-                                   <img src="images/txt6a.png" class="txt--three title--one"/>
-                                   <img src="images/process_02.png" class="txt--three process--one"/>
-                               </div>
-                           </div>
+            <div class="swiper-slide">
+                <a name="little">
+                    <div class="box_inner--button">
+                        <img src="images/bg_03.png" class="link_button" />
+                        <div class="select">
+                            <a class="little" href="index_bak_three.html"></a>
+                            <a class="middle" href="index_bak_four.html"></a>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -138,10 +61,17 @@
     <script src="js/swiper.3.1.2.jquery.min.js" type="text/javascript"></script>
     <script src="js/basic.js" type="text/javascript"></script>
     <script src="js/imgcomplete.js" type="text/javascript"></script>
+    <script src="js/imgload.js" type="text/javascript"></script>
     <script src="js/noclickdelay.js" type="text/javascript"></script>
     <script>
-
-        var swiperV = new Swiper('.swiper-container-v', {
+        setTimeout(function(){
+                    $('.first').fadeIn(1000,function(){
+                        $('.second').fadeIn(1000,function(){
+                            $('.third').fadeIn(1000,function(){});
+                        });
+                    })
+        },5000);
+        var swiperH = new Swiper('.swiper-container-h', {
             direction: 'vertical',
             slidesPerView:1,
             paginationClickable: true,
@@ -151,9 +81,10 @@
 
             },
             onSlideChangeEnd: function () {
-                abc = swiperV.activeIndex;
-                switch (abc){
+                var s = swiperH.activeIndex;
+                switch (s){
                     case 0:
+
                         $('.first').fadeIn(1000,function(){
                             $('.second').fadeIn(1000,function(){
                                 $('.third').fadeIn(1000,function(){});
@@ -182,17 +113,17 @@
             }
         });
 
-        var swiperH = new Swiper('.swiper-container-h', {
+        /*var swiperH = new Swiper('.swiper-container-h', {
             direction: 'vertical',
             slidesPerView: 1,
-            paginationClickable: true,
+            paginationClickable: true
             onSlideChangeStart: function () {
                 $('.txt--two').fadeOut(1000,function(){});
                 $('.pro').fadeOut(1000,function(){});
                 $('.step_detail').fadeOut(1000,function(){});
                 $('.txt--three').fadeOut(1000,function(){});
             },
-            onSlideChangeEnd: function () {
+        onSlideChangeEnd: function () {
                 var index = swiperH.activeIndex;
                 switch (index){
                     case 0:
@@ -220,9 +151,9 @@
                         break;
                 }
             }
-        });
+        });*/
 
-        var swiperT = new Swiper('.swiper-container-h-one', {
+       /* var swiperT = new Swiper('.swiper-container-h-one', {
             direction: 'vertical',
             slidesPerView: 1,
             paginationClickable: true,
@@ -260,23 +191,71 @@
                         break;
                 }
             }
-        });
+        });*/
+       /* function s1(){
+            swiperH.slideTo(3);
+            $('#s--one').css("display","block");
+            var swiperV = new Swiper('#s--one', {
+                paginationClickable: true,
+                direction: 'vertical'
 
-        function clickIndex(index){
+
+               /!* onSlideChangeEnd: function () {
+                     var a=swiperH.activeIndex;
+                        switch(a){
+                            case 0:
+                                $('.top--one').fadeIn(1000,function(){
+                                    $('.top--two').fadeIn(1000,function(){
+                                        $('.pro--one').fadeIn(1000,function(){
+                                            $('.pro--two').fadeIn(1000,function(){
+                                                $('.pro--three').fadeIn(1000,function(){});
+                                            });
+                                        });
+                                    });
+                                });
+                                break;
+                            case 1:
+                                $('.step_detail--one').fadeIn(1000,function(){
+                                    $('.step_detail--two').fadeIn(1000,function(){
+                                        $('.step_detail--three').fadeIn(1000,function(){});
+                                    });
+                                });
+                                break;
+                            case 2:
+                                $('.title--one').fadeIn(1000,function(){
+                                    $('.process--one').fadeIn(1000,function(){});
+                                });
+                                break;
+                        }
+                }*!/
+                });
+
+        }
+
+
+        function s2(){
+            swiperH.slideTo(3);
+            $('#s--two').css("display","block");
+            var swiperV = new Swiper('#s--two', {
+                paginationClickable: true,
+                direction: 'vertical'
+            });
+        }
+        /!*function clickIndex(index){
             switch (index){
                 case 1:
                     alert('good');
-                   $('#box--two').hide();
-                        swiperV.slideTo(4);
+                  /!* $('#box--two').hide();*!/
+                        swiperH.slideTo(0);
                 break;
                 case 2:
                     alert('fine');
                     swiperV.slideTo(4);
-                    $('#box--one').hide();
+                   /!* $('#box--one').hide();*!/
                 break;
             }
             swiperV.slideNext();
-        }
+        }*!/*/
     </script>
 </body>
 </html>

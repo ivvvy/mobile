@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="../dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/swiper.3.1.2.min.css" type="text/css"/>
 
     <!-- Demo styles -->
     <style>
@@ -52,52 +52,44 @@
 </head>
 <body>
     <!-- Swiper -->
-    <div class="swiper-container swiper-container-h">
+    <div class="swiper-container swiper-container-v">
         <div class="swiper-wrapper">
             <div class="swiper-slide">Horizontal Slide 1</div>
-            
-			<div class="swiper-slide swiper-no-swiping">
+            <div class="swiper-slide swiper-no-swiping">
               <input type="button" value="aaa" onclick="v1();" />&nbsp;&nbsp;&nbsp;
 			  <input type="button" value="bbb" onclick="v2();" />
             </div>
-
             <div class="swiper-slide">
-
-				 <div id="v1" class="swiper-container" style="display:none;">
+                <div id="v1" class="swiper-container" style="display:none;">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">v11111111</div>
                         <div class="swiper-slide">v22222222</div>
                     </div>
-
                 </div>
-
-
-				<div id="v2" class="swiper-container" style="display:none;">
+                <div id="v2" class="swiper-container" style="display:none;">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">v3333333</div>
                         <div class="swiper-slide">v44444444</div>
                     </div>
-
                 </div>
 			</div>
-            <div class="swiper-slide">Horizontal Slide 4</div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination swiper-pagination-h"></div>
     </div>
 
     <!-- Swiper JS -->
-	<script src="jquery-1.11.min.js"></script>
-    <script src="../dist/js/swiper.min.js"></script>
+    <script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="js/swiper.3.1.2.jquery.min.js" type="text/javascript"></script>
 
     <!-- Initialize Swiper -->
     <script>
-    var swiperH = new Swiper('.swiper-container-h', {
+    var swiperV = new Swiper('.swiper-container-v', {
         pagination: '.swiper-pagination-h',
         paginationClickable: true,
         spaceBetween: 50,
 		onSlideChangeEnd:function(){
-			var s = swiperH.activeIndex;
+			var s = swiperV.activeIndex;
 			if(s == 1){
 				$('#v1').css("display","none");
 				$('#v2').css("display","none");
@@ -112,20 +104,20 @@
 		
 		
 		
-		swiperH.slideTo(2);
-		$('#v1').css("display","");
-		var swiperV = new Swiper('#v1', {
+		swiperV.slideTo(2);
+		$('#v1').css("display","block");
+		var swiperH = new Swiper('#v1', {
 			paginationClickable: true,
-			direction: 'vertical',
+			direction: 'horizontal',
 			spaceBetween: 50
 		});
 
 	}
 
 	function v2(){
-		swiperH.slideTo(2);
-		$('#v2').css("display","");
-		var swiperV = new Swiper('#v2', {
+		swiperV.slideTo(2);
+		$('#v2').css("display","block");
+		var swiperH = new Swiper('#v2', {
 			paginationClickable: true,
 			direction: 'vertical',
 			spaceBetween: 50

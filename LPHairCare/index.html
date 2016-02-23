@@ -14,7 +14,7 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <link rel="stylesheet" href="css/global.css" type="text/css">
     <link rel="stylesheet" href="css/swiper.3.1.2.min.css" type="text/css"/>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style_bak.css" type="text/css">
     <title></title>
 </head>
 <body>
@@ -66,7 +66,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide box--one">
+            <div class="swiper-slide box--two">
                 <div class="box_inner--diff">
                     <div class="box_inner--little">
                         <img src="images/step_detail_01.png" class="step_detail step_detail--one" />
@@ -78,7 +78,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide box--one">
+            <div class="swiper-slide box--three">
                 <div class="box_inner--diff">
                     <div class="box_inner--little">
                         <img src="images/txt4a.png" class="txt--three title--one"/>
@@ -86,7 +86,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide box--two">
+            <div class="swiper-slide box--four">
                 <div class="box_inner--diff">
                     <div class="box_inner--middle">
                         <img src="images/txt5a.png" class="txt--two top--one" />
@@ -100,7 +100,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide box--two">
+            <div class="swiper-slide box--five">
                 <div class="box_inner--diff">
                     <div class="box_inner--middle">
                         <img src="images/step_detail_04.png" class="step_detail step_detail--one" />
@@ -112,7 +112,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide box--two">
+            <div class="swiper-slide box--six">
                 <div class="box_inner--diff">
                     <div class="box_inner--middle">
                         <img src="images/txt6a.png" class="txt--three title--one"/>
@@ -190,11 +190,20 @@
         function clickIndex(index){
             switch (index){
                 case 1:
-                    $('.box--two').hide();
+                    $('.box--one').show();
+                    $('.box--two').show();
+                    $('.box--three').show();
+                   /* $('.box--four').hide();
+                    $('.box--five').hide();
+                    $('.box--six').hide();*/
                     break;
                 case 2:
-                    $('.box--one').hide();
-
+                    $('.box--four').show();
+                    $('.box--five').show();
+                    $('.box--six').show();
+                    /*$('.box--one').hide();
+                    $('.box--two').hide();
+                    $('.box--three').hide();*/
                     break;
             }
             swiper.slideNext();
