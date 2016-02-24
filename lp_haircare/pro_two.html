@@ -58,6 +58,7 @@
     </div>
     <script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="js/swiper.3.1.2.jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.cookie.js" type="text/javascript"></script>
     <script src="js/basic.js" type="text/javascript"></script>
     <script src="js/imgcomplete.js" type="text/javascript"></script>
     <script>
@@ -75,8 +76,8 @@
             slidesPerView:1,
             paginationClickable: true,
             onSlideChangeStart: function () {
-                /*$('.txt--two').fadeOut(1000,function(){});
-                $('.pro').fadeOut(1000,function(){});*/
+                $('.txt--two').fadeOut(1000,function(){});
+                $('.pro').fadeOut(1000,function(){});
                 $('.step_detail').fadeOut(1000,function(){});
                 $('.txt--three').fadeOut(1000,function(){});
             },

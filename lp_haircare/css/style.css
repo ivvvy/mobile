@@ -9,9 +9,9 @@
 .box_inner--diff{position:absolute;width:100%;height:100%;overflow: hidden;background:url(../images/bg_02.png) no-repeat;background-size: 100%;-webkit-background-size: 100%;}
 .swiper-slide .box_inner--second{position:absolute;width:100%;height:100%}
 .swiper-slide .box_inner--second .img--right{position:absolute;width:100%;display:none}
-.swiper-slide .box_inner--second .pic{top:22%}
-.swiper-slide .box_inner--second .txt{top:25%;}
-.swiper-slide .box_inner--second .txt--one{top:65%;}
+.swiper-slide .box_inner--second .pic{top:20%}
+.swiper-slide .box_inner--second .txt{top:24%;}
+.swiper-slide .box_inner--second .txt--one{top:63%;}
 .box_inner--diff .bottom_arrow{position:absolute;/*left:35%;*/z-index:150; width:100%; height:50px;bottom:0;}
 .box_inner--diff .bottom_arrow p{position:absolute;background:url(../images/arrow_one.png) no-repeat;width:100%;height:21px;background-size: 100%;  -webkit-background-size: 100%;-webkit-animation:start 1.5s infinite ease-in-out; -moz-animation:start 1.5s infinite ease-in-out;animation:start 1.5s infinite ease-in-out;}
 .box_inner--button{position:absolute;width:100%;height:100%;overflow: hidden;background:url(../images/bg_03.png) no-repeat;background-size: 100%;-webkit-background-size: 100%;}
@@ -46,8 +46,8 @@
 .swiper-slide .box_inner--middle .step_detail--two{top:39%}
 .swiper-slide .box_inner--middle .step_detail--three{top:62%}
 .swiper-slide .box_inner--middle .txt--three{position:absolute;width:100%;}
-.swiper-slide .box_inner--middle .title--one{top:18%}
-.swiper-slide .box_inner--middle .process--one{top:31%}
+.swiper-slide .box_inner--middle .title--one{top:17%}
+.swiper-slide .box_inner--middle .process--one{top:30%;}
 
 /*箭头指示引导*/
 @-webkit-keyframes start {

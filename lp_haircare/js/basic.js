@@ -20,6 +20,9 @@ $(function(){
     var middle=w*0.2;
     $(".middle").css("top",middle+"px");
 
+    var process=w*1;
+    $(".process--one").css("height",process+"px");
+
     /*var alittle=w*1.034375;
     $(".little").css("top",alittle+"px");
 
