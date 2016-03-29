@@ -1,0 +1,132 @@
+.inner_box{position:absolute;width:100%;}
+.inner_box .bg{position: absolute;width:100%}
+.animation_play{position:absolute;width:100%;display:block}
+.animation_one{opacity:0.5}
+.animation_three{opacity:0.5}
+.animation_two{display:none}
+.big{width:100%;top:0;transform:scale(0) translateY(20%);display:none}
+.bigshow{animation:bigword 1.5s linear forwards;-webkit-animation:bigword 1.5s linear forwards;-moz-animation:bigword 1.5s linear forwards;}
+.animation_four{display:none}
+.zoom_in{animation:zoomIn 1.5s linear forwards;-webkit-animation:zoomIn 1.5s linear forwards;-moz-animation:zoomIn 1.5s linear forwards;}
+.icon_opacity{opacity:0.4}
+.icon_change{animation:icon_o 1s linear forwards;-webkit-animation:icon_o 1s linear forwards;-moz-animation:icon_o 1s linear forwards;}
+.bottom_arrow{position:absolute;left:45%;z-index:150; width:8%; height:32px;bottom:0;}
+.bottom_arrow p{position:absolute;background:url(../images/arrow.png) no-repeat;width:100%;height:15px;background-size: 100%;-webkit-background-size: 100%;-webkit-animation:start 1.5s infinite ease-in-out; -moz-animation:start 1.5s infinite ease-in-out;animation:start 1.5s infinite ease-in-out;}
+.music--box{right: 0;top: 0;width:100px;height: 50px;z-index: 999;position: fixed;background: #000;display:none}
+.music-icon{background-image: url(../images/play.png);background-position: center center; background-size:100%;background-repeat: no-repeat;height: 28px;position: fixed;right:7%;width:28px;z-index: 999;animation:rotate 3s linear infinite 0s;-webkit-animation:rotate 3s linear infinite 0s;-moz-animation:rotate 3s linear infinite 0s;}
+.stop{background-image: url(../images/pause.png);animation:norotate 3s linear infinite 0s;-webkit-animation:norotate 3s linear infinite 0s;-moz-animation:norotate 3s linear infinite 0s;}
+/*箭头指示引导*/
+@-webkit-keyframes start {
+    0%{opacity:1;-webkit-transform: translate(0,10px);}
+    30%{opacity:0.8;-webkit-transform: translate(0,6px);}
+    60% {opacity:0.6;-webkit-transform: translate(0,0);}
+    100% {opacity:0.4;-webkit-transform: translate(0,-8px);}
+}
+@-moz-keyframes start {
+    0%{opacity:1;-moz-transform: translate(0,10px);}
+    30%{opacity:0.8;-moz-transform: translate(0,6px);}
+    60% {opacity:0.6;-moz-transform: translate(0,0);}
+    100% {opacity:0.4;-moz-transform: translate(0,-8px);}
+}
+@keyframes start {
+    0%{opacity:1;transform: translate(0,10px);}
+    30%{opacity:0.8;transform: translate(0,6px);}
+    60% {opacity:0.6;transform: translate(0,0);}
+    100% {opacity:0.4;transform: translate(0,-8px);}
+}
+/*标语二*/
+@-webkit-keyframes bigword{
+    from{-webkit-transform:scale(0) translateY(20%);}
+    to{-webkit-transform:scale(1) translateY(0);}
+
+    /* 0%{-webkit-transform:scale(0);}
+     10%{-webkit-transform:scale(0.2);}
+     30%{-webkit-transform:scale(0.4);}
+     60% {-webkit-transform:scale(0.6);}
+     80% {-webkit-transform:scale(0.8);}
+     100% {-webkit-transform:scale(1);}*/
+}
+@-moz-keyframes bigword{
+    from{-moz-transform:scale(0) translateY(20%);}
+    to{-moz-transform:scale(1) translateY(0);}
+
+    /*0%{-moz-transform:scale(0);}
+    10%{-moz-transform:scale(0.2);}
+    30%{-moz-transform:scale(0.4);}
+    60% {-moz-transform:scale(0.6);}
+    80% {-moz-transform:scale(0.8);}
+    100% {-moz-transform:scale(1);}*/
+}
+@keyframes bigword{
+    from{transform:scale(0) translateY(20%);}
+    to{transform:scale(1) translateY(0);}
+
+    /*0%{transform:scale(0);}
+    10%{transform:scale(0.2);}
+    30%{transform:scale(0.4);}
+    60% {transform:scale(0.6);}
+    80%{transform:scale(0.8);}
+    100% {transform:scale(1);}*/
+}
+
+/*头部标语一*/
+@-webkit-keyframes zoomIn{
+    0%{opacity:0.5}
+    50%{opacity:0.8}
+    100% {opacity:1}
+}
+@-moz-keyframes zoomIn{
+    0%{opacity:0.5}
+    50%{opacity:0.8}
+    100% {opacity:1}
+}
+@keyframes zoomIn{
+    0%{opacity:0.5}
+    50%{opacity:0.8}
+    100% {opacity:1}
+}
+/*小icon*/
+@-webkit-keyframes icon_o{
+    0%{opacity:0.4}
+    30%{opacity:0.6}
+    60%{opacity:0.8}
+    100%{opacity:1}
+}
+@-moz-keyframes icon_o{
+    0%{opacity:0.4}
+    30%{opacity:0.6}
+    60%{opacity:0.8}
+    100%{opacity:1}
+}
+@keyframes icon_o{
+    0%{opacity:0.4}
+    30%{opacity:0.6}
+    60%{opacity:0.8}
+    100%{opacity:1}
+}
+
+/*背景音乐按钮*/
+@keyframes rotate{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+@-webkit-keyframes rotate{
+    0%{ -webkit-transform:rotate(0deg); }
+    100%{ -webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes rotate{
+    0%{ -moz-transform:rotate(0deg);}
+    100%{ -moz-transform:rotate(360deg);}
+}
+@keyframes norotate{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(0deg);}
+}
+@-webkit-keyframes norotate{
+    0%{ -webkit-transform:rotate(0deg); }
+    100%{ -webkit-transform:rotate(0deg);}
+}
+@-moz-keyframes norotate{
+    0%{ -moz-transform:rotate(0deg);}
+    100%{ -moz-transform:rotate(0deg);}
+}
