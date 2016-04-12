@@ -15,23 +15,50 @@
     <title></title>
     <link rel="stylesheet" href="styles/global.css" type="text/css"/>
     <link rel="stylesheet" href="styles/index.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/swiper.3.1.2.min.css" type="text/css">
+    <script src="scripts/libs/jweixin-1.0.0.js"></script>
 </head>
 <body>
-<div class="container">
-    <div class="container--inner">
-        <img src="images/options_03.png" class="options" />
-        <div class="input_edit">
-            <input type="text" required="required" name="name" class="name txt_input" id="username" placeholder="姓名" />
-            <input type="text" required="required" name="tel" class="tel txt_input" id="ContactNumber" placeholder="手机号" />
-            <input type="text" required="required" name="projecrt" class="project txt_input" id="project" placeholder="购买项目" />
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="images/bg.png" class="first_page"/>
         </div>
-        <div class="confirm">
-            <button class="btn"></button>
+        <div class="swiper-slide">
+            <div class="info">
+                <img src="images/bg_01.png" class="first_page" />
+                <div class="options_box">
+                    <img src="images/options.png" class="options_bg" />
+                    <div class="input_edit">
+                        <input type="text" required="required" name="name" class="name txt_input" id="username" placeholder="姓名" />
+                        <input type="text" required="required" name="tel" class="tel txt_input" id="ContactNumber" placeholder="手机号" />
+                        <input type="text" required="required" name="project" class="project txt_input" id="project" placeholder="购买项目" />
+                        <input type="text" required="required" name="house" class="house txt_input" id="house_num" placeholder="购买房号" />
+                    </div>
+                    <div class="confirm">
+                        <button class="btn"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="success_page">
+                <img src="images/bg_02.png" />
+                <div class="call">
+                    <a href="tel:400-720-5058" class="vip_line"></a>
+                </div>
+            </div>
         </div>
     </div>
-
 </div>
 <script src="scripts/libs/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="scripts/libs/swiper.3.1.2.jquery.min.js" type="text/javascript"></script>
+<script src="scripts/libs/imgload.js" type="text/javascript"></script>
 <script type="text/javascript" src="scripts/controllers/index.js"></script>
+<script>
+    var swiperV = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        slidesPerView:1,
+        paginationClickable: true,
+    });
+</script>
 </body>
 </html>

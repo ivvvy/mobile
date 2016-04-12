@@ -1,8 +1,20 @@
-.container{position: absolute;width:100%;height:100%;background:url(../images/membership_bg.png) no-repeat;background-size:100%;-webkit-background-size:100%}
+/*.container{position: absolute;width:100%;height:100%;background:url(../images/membership_bg.png) no-repeat;background-size:100%;-webkit-background-size:100%}
 .container--inner{position:absolute;width:100%;}
 .options{position:absolute;width:100%}
 .input_edit{position:absolute;width:100%;}
 .input_edit .name,.input_edit .tel,.input_edit .project{position:absolute;border-top: none;border-left: none;border-right:none;border-bottom:none;width:86%;text-align:left;left:5%;outline:0;-webkit-appearance:none;background:rgba(0,0,0,0);color:#000;border-radius:0;font-size:14px;font-family:"microsoft yahei";}
 #username::-webkit-input-placeholder,#ContactNumber::-webkit-input-placeholder,#project::-webkit-input-placeholder{color:rgba(0,0,0,.6);font-family: "microsoft yahei";font-size:14px}
 .confirm{width:63%;position:absolute;left:19%;-webkit-appearance:none;border:1px solid #000}
+.confirm .btn{display:block;border:none;-webkit-appearance:none;width:100%;background:rgba(0,0,0,0);outline:0;-webkit-appearance:none;}*/
+.first_page{position:absolute;width:100%}
+.info{position:absolute;width:100%}
+.options_box{position:absolute;width:100%}
+.options_bg{position:absolute;width:100%}
+.input_edit{position:absolute;width:100%;top:0}
+.input_edit .name,.input_edit .tel,.input_edit .project,.input_edit .house{position:absolute;border-top: none;border-left: none;border-right:none;border-bottom:none;width:75%;text-align:left;left:11%;outline:0;-webkit-appearance:none;background:rgba(0,0,0,0);color:#fff;border-radius:0;font-size:14px;font-family:"microsoft yahei";}
+#username::-webkit-input-placeholder,#ContactNumber::-webkit-input-placeholder,#project::-webkit-input-placeholder,#house_num::-webkit-input-placeholder{color:rgba(225,225,225,.6);font-family: "microsoft yahei";font-size:14px}
+.confirm{width:47%;position:absolute;left:27%;-webkit-appearance:none;}
 .confirm .btn{display:block;border:none;-webkit-appearance:none;width:100%;background:rgba(0,0,0,0);outline:0;-webkit-appearance:none;}
+.success_page{position: absolute;width:100%;z-index:999;display:none}
+.call{width:56%;position:absolute;left:22%;-webkit-appearance:none;}
+.call .vip_line{display:block;border:none;-webkit-appearance:none;width:100%;background:rgba(0,0,0,0);outline:0;-webkit-appearance:none;}
