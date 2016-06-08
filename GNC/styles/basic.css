@@ -1,0 +1,187 @@
+@CHARSET "UTF-8";
+/* reset */
+html{color:#000;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+body, button, input, select, textarea{font-size:100%;font-family:"微软雅黑","Microsoft YaHei","黑体","宋体","Arial","Times New Roman","Verdana","Tahoma","\5b8b\4f53";}
+img{border:none; vertical-align: bottom;}
+ul, ol, li{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+q:before,q:after{content:'';}
+button,input,select,textarea{font-size:100%;}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+address,cite,dfn,em,var{font-style:normal;}
+table{border-collapse: collapse;border-spacing: 0;}
+a{color:#9b9da2;text-decoration:none;}
+a:hover{color:#018fcd;text-decoration:none;}
+input,select,textarea,button{cursor: pointer;outline:none }
+textarea{resize:none;}
+input[type="button"], input[type="submit"], input[type="reset"] {
+-webkit-appearance: none;}
+body{background-color: #fff;}
+data{display: none;}
+
+
+input[type=text],input[type=password]{
+	line-height: normal!important;
+}
+input[type=text]:focus,input[type=password]:focus{
+	line-height: normal; line-height: 2.4em\9;
+}
+
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,.h1 small,.h2 small,.h3 small,.h4 small,.h5 small,.h6 small,h1 .small,h2 .small,h3 .small,h4 .small,h5 .small,h6 .small,.h1 .small,.h2 .small,.h3 .small,.h4 .small,.h5 .small,.h6 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999999;
+}
+
+h1,h2,h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h1 small,h2 small,h3 small,h1 .small,h2 .small,h3 .small {
+  font-size: 65%;
+}
+
+h4,h5,h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h4 small,h5 small,h6 small,h4 .small,h5 .small,h6 .small {
+  font-size: 75%;
+}
+
+h1,.h1 {
+  font-size: 36px;
+}
+
+h2,.h2 {
+  font-size: 30px;
+}
+
+h3,.h3 {
+  font-size: 24px;
+}
+
+h4,.h4 {
+  font-size: 18px;
+}
+
+h5,.h5 {
+  font-size: 14px;
+}
+
+h6,.h6 {
+  font-size: 12px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+ 
+
+/*公共颜色样式*/
+.gray{color:#aaa;}
+.blue{color:#5890ce;}
+.red{color:#ee1111;}
+.red2{color:#f60; }
+
+/*公共布局样式*/
+.clear{clear:both!important;}
+.clear-fix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clear-fix{zoom: 1;}
+.left{float: left!important}
+.right{float:right!important}
+.text-center{text-align: center!important}
+.text-left{text-align: left!important}
+.text-right{text-align: right!important}
+ 
+
+.p5{padding:5px!important;}
+.p10{padding:10px!important;}
+.p20{padding:20px!important;}
+.p30{padding:30px!important;}
+.p40{padding:40px!important;}
+
+.pl0{padding-left: 0px!important;}
+.pl5{padding-left:5px!important;}
+.pl10{padding-left:10px!important;}
+.pl20{padding-left:20px!important;}
+.pl30{padding-left:30px!important;}
+.pl40{padding-left:40px!important;}
+
+.pt5{padding-top:5px!important;}
+.pt10{padding-top:10px!important;}
+.pt20{padding-top:20px!important;}
+
+.pb5{padding-bottom: 5px!important;}
+.pb10{padding-bottom: 10px!important;}
+.pb20{padding-bottom: 20px!important;}
+
+.m5{margin:5px!important;}
+.m10{margin:10px!important;}
+.m20{margin:20px!important;}
+
+.mt5{margin-top: 5px!important;}
+.mt10{margin-top: 10px!important;}
+.mt15{ margin-top: 15px!important;}
+.mt20{margin-top: 20px!important;}
+.mt30{margin-top: 30px!important;}
+.mt40{margin-top: 40px!important;}
+
+.mb5{margin-bottom: 5px!important;}
+.mb10{margin-bottom: 10px!important;}
+.mb20{margin-bottom:20px!important;}
+.mb30{margin-bottom:30px!important;}
+.mb40{margin-bottom:40px!important;}
+
+.ml1{margin-left: 1px!important;}
+.ml5{margin-left:5px!important;}
+.ml10{margin-left:10px!important;}
+.ml15{margin-left:15px!important;}
+.ml20{margin-left:20px!important;}
+.ml30{margin-left:30px!important;}
+
+.mr1{margin-right: 1px!important;}
+.mr5{margin-right: 5px!important;}
+.mr10{margin-right:10px!important;}
+.mr20{margin-right: 20px!important;}
+.mr35{margin-right:35px!important}
+
+
+.mr1p{margin-right: 1%!important;}
+.ml1p{margin-left:1%!important;}
+
+/*百分比分栏*/
+.perc0{width:10%;}
+.perc1{width:10%;}
+.perc9{width:90%;}
+.perc2{width:20%;}
+.perc8{width:80%;}
+.perc3{width:30%;}
+.perc7{width:70%;}
+.perc4{width:40%;}
+.perc6{width:60%;}
+.perc5{width:50%;}
+
+
+#touchPortrait {position:fixed; left:0; top:0; z-index:12000; color:#fff; text-align: center; width:100%; height:100%; -moz-text-shadow: 2px 2px 3px rgba(0, 0, 0, .5); -webkit-text-shadow: 2px 2px 3px rgba(0, 0, 0, .5); text-shadow: 2px 2px 3px rgba(0, 0, 0, .5); background:#000; display:none; }
+#touchPortrait #m_tips{position:absolute; top:10%; left:6%; width:88%;height:70%;}
+#touchPortrait #touchAnimation { position: absolute; height:60%; top:40%; left:0; width:100%; background: url('../images/zhuan.png') no-repeat center center; margin:0 auto; padding:0; background-size:auto 100%;}
+
+

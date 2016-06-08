@@ -1,0 +1,27 @@
+.arrow{position:absolute;width:23%;left:38%;bottom:4%;animation:button1 1s linear 0s infinite normal;-webkit-animation:button1 1s linear 0s infinite normal;}
+.arrow1{position:absolute;width:7%;left:47%;bottom:3%;animation:button1 1s linear 0s infinite normal;-webkit-animation:button1 1s linear 0s infinite normal;}
+.select{position: absolute;width:80%;left:10%;top:38%;}
+.radiobox{ position:absolute;width:8%;left:15%;top:43.5%;font-size: 12px}
+.choice{width: 24px;float: left;cursor: pointer;text-align: center;margin-right: 10px;background-image: url(../images/checkbox.png); background-repeat: no-repeat;background-size:90%;position:absolute;text-indent:-2000em;}
+#checked{background-image:url(../images/checked.png);width: 24px;float: left;cursor: pointer;text-align: center;margin-right: 10px;background-repeat: no-repeat;background-size:90%;position:absolute;}
+.radioclass {opacity: 0;cursor: pointer;position:absolute;top:0;left:1%;width:81%;}
+.submit3_button{position:absolute;width:38%;top:85%;left:10%;}
+.submit4_button{position:absolute;width:38%;top:85%;left:52%;}
+.txt{position: absolute;top:0;width:100%;overflow:hidden;display:none}
+.txt_show{animation:bigword 1.5s linear forwards;-webkit-animation:bigword 1.5s linear forwards;-moz-animation:bigword 1.5s linear forwards;}
+@-webkit-keyframes bigword{
+    from{-webkit-transform:scale(0) translateY(20%);}
+    to{-webkit-transform:scale(1) translateY(0);}
+}
+@-moz-keyframes bigword{
+    from{-webkit-transform:scale(0) translateY(20%);}
+    to{-webkit-transform:scale(1) translateY(0);}
+}
+@keyframes bigword{
+    from{-webkit-transform:scale(0) translateY(20%);}
+    to{-webkit-transform:scale(1) translateY(0);}
+}
+.detail_box{width:98%;left:1%;top:0}
+.link{position:absolute;width:22%;top:41%;left:39%;}
+.modal{display: none;position: absolute;width:90%;top:0;left:0;background-color: rgba(0,0,0,.95);color: #fff;padding-left:5%;padding-right:5%;padding-top:5%;overflow: auto;z-index: 999;}
+.detail_box .close{display: inline-block;height:27px;width: 27px;position: absolute;line-height: 20px;right: 11%;text-align: center;top: 16%;}

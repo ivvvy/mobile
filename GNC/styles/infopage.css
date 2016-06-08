@@ -1,0 +1,28 @@
+body{background-color: #000; overflow: hidden;width: 100%;height: 100%;}
+img{width:100%}
+#page{width:100%;height:100%;position:absolute}
+#page section{width:100%;height:100%;/*position:absolute;*/top: 0;overflow: hidden;background-repeat: no-repeat;background-size: cover!important;}
+.bg{position:absolute;width:100%;height:100%;overflow:hidden}
+.bg img{position:relative;width:100%;height:100%}
+.button1{position:absolute;width:42%;left:30%;bottom:10%;animation:button1 1s linear 0s infinite normal;-webkit-animation:button1 1s linear 0s infinite normal;}
+/*.button1 img,.submit_button img,.submit2_button img{width:100%;}*/
+@keyframes button1 {
+    0%{transform: scale(1,1); }
+    50% { transform: scale(1.1,1.1); }
+    100% { transform: scale(1,1); }
+}
+@-webkit-keyframes button1 {
+    0%{-webkit-transform: scale(1,1);}
+    50% { -webkit-transform: scale(1.1,1.1);}
+    100%{-webkit-transform: scale(1,1);}
+}
+.info{position:absolute;width:100%;height:100%;overflow:hidden}
+.info_data{}
+.info img{width:100%;position:absolute;}
+.input_edit{position:absolute;width:100%}
+.txt_input{position: absolute;border-top: none; border-left: none;border-right: none;border-bottom: none;width:60%;text-align: left;left:21%;outline: 0;-webkit-appearance: none;background: rgba(0,0,0,0);color: #fff;border-radius: 0;font-size: 14px;font-family: "microsoft yahei";}
+.submit_button{position:absolute;width:50%;top:73%;left:26%;animation:button1 1s linear 0s infinite normal;-webkit-animation:button1 1s linear 0s infinite normal;}
+.submit2_button{position:absolute;width:50%;top:90%;left:26%;}
+.detail-overlay{display: none;position: absolute;width:90%;top:0;left:0;background-color: rgba(0,0,0,.95);color: #fff;padding-left:5%;padding-right:5%;padding-top:5%;overflow: auto;z-index: 999;}
+.detail{position: absolute;width:80%;left:10%;top:4%;}
+.success{position:absolute;top:0;left: 0;width: 100%}
